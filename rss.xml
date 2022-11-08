@@ -10,8 +10,48 @@
         </author>
         <description>在回忆的白纸上&lt;br&gt;绘上梦想的碎片</description>
         <language>zh-CN,en,ja,default</language>
-        <pubDate>Sun, 18 Sep 2022 11:40:48 +0800</pubDate>
-        <lastBuildDate>Sun, 18 Sep 2022 11:40:48 +0800</lastBuildDate>
+        <pubDate>Tue, 08 Nov 2022 09:20:00 +0800</pubDate>
+        <lastBuildDate>Tue, 08 Nov 2022 09:20:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://blog.moeqy.com/announcement/</guid>
+            <title>公告：关于本站评论说明</title>
+            <link>https://blog.moeqy.com/announcement/</link>
+            <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
+            <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
+            <pubDate>Tue, 08 Nov 2022 09:20:00 +0800</pubDate>
+            <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;MyBlog 目前还在进行规划，您现在所看到的主页并不是最终完成的内容&lt;br /&gt;
+目前打算在小站中塞下学习笔记、ACG、爱好等内容&lt;br /&gt;
+如若内容过于复杂，则打算将学习笔记腾到分站&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;小站最近发现已经有未经允许的商业宣传评论。虽然我个人认为大多数这样的评论估计都是机器人自动发的，但还是声明一下评论区须知：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本站有关发布、传播信息的媒介，包括但不限于评论等功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;禁止使用于&lt;strong&gt;未经允许的商业宣传&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;禁止发布&lt;strong&gt;引起争议性的评论&lt;/strong&gt;，包括但不限于议政、歧视、引战等内容；&lt;/li&gt;
+&lt;li&gt;禁止发布违反&lt;strong&gt;相关法律法规、道德风俗&lt;/strong&gt;的评论；&lt;/li&gt;
+&lt;li&gt;以上内容也适用于&lt;strong&gt;头像、昵称等&lt;/strong&gt;，能够传播信息的功能。禁止包含恶意链接、二维码、商业邮箱等传播路径；&lt;/li&gt;
+&lt;li&gt;在相关评论区中，您可以发布有关内容的分享，或者基于此内容的见解和讨论。本站希望评论区能够保持互联网知识分享的价值；&lt;/li&gt;
+&lt;li&gt;相关内容的讨论和申请，请在其讨论范围以内进行。请勿在其他地方提及。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多详情请参考小站的&lt;a href=&#34;/faq/&#34;&gt;评论规则&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;小站希望评论区能够保持一个良好的交流环境。小站作为一个非商业性质的个人博客，本身也是一个普通人捣鼓许久的一个作品。希望大家光临小站时，能够保持一个基本的礼节，通过恰当的交流互相了解对方，并且保持大家一个良好的交流环境。&lt;/p&gt;
+&lt;p&gt;虽然只是我个人的哔哔，估计真发广告的小传单人也不会看。就当是我写了一条说说记录我的博客第一次出现这么多商业广告吧。&lt;/p&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;保留的公告&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2022/08/27&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
+现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022 更早&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
+注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
+&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://blog.moeqy.com/computer-science/java/course/unit-1/</guid>
             <title>Java基础：输入，输出和计算</title>
@@ -390,26 +430,6 @@ lightOn = !lightOn; // true
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucGl4aXYubmV0L2FydHdvcmtzLzgwNzkwMzM4&#34;&gt; https://www.pixiv.net/artworks/80790338&lt;/span&gt; | Pixiv：塞雷娅 by @巫的师；&lt;br /&gt;
 Java 标志来自 [&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy52ZWN0b3JzbGFuZC5jb20=&#34;&gt;www.vectorsland.com&lt;/span&gt;]。&lt;/p&gt;
 &lt;/div&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://blog.moeqy.com/announcement/</guid>
-            <title>公告：评论恢复</title>
-            <link>https://blog.moeqy.com/announcement/</link>
-            <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
-            <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
-            <pubDate>Sat, 27 Aug 2022 09:50:00 +0800</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;MyBlog 目前还在进行规划，您现在所看到的主页并不是最终完成的内容&lt;br /&gt;
-目前打算在小站中塞下学习笔记、ACG、爱好等内容&lt;br /&gt;
-如若内容过于复杂，则打算将学习笔记腾到分站&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
-现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;保留的上一个公告&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
-注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
-&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
