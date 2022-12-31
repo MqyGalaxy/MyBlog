@@ -3,9 +3,8 @@
         <title>2022年MyBlog年度总结 - MqyGalaxy|Blog</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.css">
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/css.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -46,30 +45,46 @@
         <div class="main slide-container" id="slide-container">
 			<div class="slide-page page1" id="home">
 				<div class="title">
-					<img class="title-img wow animate__fadeInLeft" src="imgs/2022.png">
-					<div class="text wow animate__fadeInLeft">>> MqyGalaxy|Blog 2022年终总结</div>
+					<img class="title-img step animated fadeInLeft" src="imgs/2022.png" data-delay="1500">
+					<img class="title-img-pe step animated fadeInLeft" src="imgs/2022pe.png" data-delay="1500">
+					<div class="text step animated fadeInLeft" data-delay="1500">>> MqyGalaxy|Blog 2022年终总结</div>
+					<div class="post step animated fadeInLeft" data-delay="1500">
+						<p>手机端向下滑动即可浏览，<br>推荐使用PC端阅读。</p>
+					</div>
 				</div>
 			</div>
 			<div class="slide-page page2" id="talk">
 				<div class="container">
-					<div class="post">
-						<h1 class="wow animate__fadeInLeft">新年寄语</h1>
-						<p>小站又不知不觉地度过了一年。相比于去年，今年的</p>
+					<div class="post step step animated fadeInUp" data-delay="500" style>
+						<h1>新年寄语</h1>
+						<p>小站又不知不觉地度过了一年。相比于去年，今年的情况更加风云莫幻了。</p>
 					</div>
 				</div>
 			</div>
 			<div class="slide-page page3" id="progress">
 				<div class="container">
-					<div class="text">>> 博客进度</div>
-					<div class="post">
-						<p>十年之约</p>
+					<div>
+						<div class="post">
+							<div class="text">>> 博客进度</div>
+							<p>十年之约</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<nav class="pagination" id="pagination">
+				<a onclick="slide.slideTo(1)">首页</a>
+				<a onclick="slide.slideTo(2)">新年寄语</a>
+				<a onclick="slide.slideTo(3)">博客进度</a>
+			</nav>
         </div>
 		<script src="js/loading.js"></script>
-		<script>
-			new slidePage()
+		<script type="text/javascript" src="js/slidePage.min.js"></script>
+		<script type="text/javascript">
+			var slide = new slidePage({
+				refresh: true,
+				useAnimation: true
+			})
+			window.slide = slide
 		</script>
     </body>
 </html>
