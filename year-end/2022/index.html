@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>2022年MyBlog年度总结 - MqyGalaxy|Blog</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lipten/slidePage/dist/slidePage.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/font.css">
+		<script>
+			resetrem();
+			//切换屏幕 （横屏竖屏）
+			window.addEventListener("orientationchange", resetrem);
+			//resize：屏幕的大小发生改变就触发监听事件resetrem
+			window.addEventListener("resize",resetrem);
+			function resetrem(){
+				var html = document.querySelector("html");//获取到html元素
+				var height = html.getBoundingClientRect().height;//获取屏幕的高度
+				if (height <= 650) {
+					html.style.fontSize = 60+"px";
+				}
+				else {
+					html.style.fontSize = height/10.8+"px";
+				}
+			}
+	  </script>
+    </head>
+    <body>
+		<div class="loading">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+			<img src="imgs/loading.png"style="margin:0 auto; width: 150px;">
+		</div>
+		<header class="header">
+			<a href="https://blog.moeqy.com/" target="_blank"><img class="logo" src="imgs/blogLOGO-2.png" style="width: 2rem;"></a>
+			<a href="https://blog.moeqy.com/"><div class="button">分享页面</div></a>
+		</header>
+        <div class="main slide-container" id="slide-container">
+			<div class="slide-page page1" id="home">
+				<div class="title">
+					<img class="title-img wow animate__fadeInLeft" src="imgs/2022.png">
+					<div class="text wow animate__fadeInLeft">>> MqyGalaxy|Blog 2022年终总结</div>
+				</div>
+			</div>
+			<div class="slide-page page2" id="talk">
+				<div class="container">
+					<div class="post">
+						<h1 class="wow animate__fadeInLeft">新年寄语</h1>
+						<p>小站又不知不觉地度过了一年。相比于去年，今年的</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide-page page3" id="progress">
+				<div class="container">
+					<div class="text">>> 博客进度</div>
+					<div class="post">
+						<p>十年之约</p>
+					</div>
+				</div>
+			</div>
+        </div>
+		<script src="js/loading.js"></script>
+		<script>
+			new slidePage()
+		</script>
+    </body>
+</html>

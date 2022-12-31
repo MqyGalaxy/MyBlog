@@ -1,0 +1,160 @@
+/* background: #aa1f00; box: #fdf4e5; */
+html body, html #firstHeading {
+    font-family: sans-serif,NospzGothicMoe,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+	display: block;
+	box-sizing: border-box;
+}
+html {
+	font-size: 60px;
+}
+body {
+	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+	background-color: #fdf4e5;
+    font-size: .24rem;
+}
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
+}
+img {
+	flex-shrink:0;
+}
+.button {
+	width: 1.2rem;
+	padding: 10px;
+	font-size: .2rem;
+	background-image: linear-gradient(to right, #ff69b4 0, #ffb6c1 100%);
+	text-align: center;
+	color: #fff;
+	border-radius: 30px;
+	box-shadow: 0 0 8px 2px rgba(255,230,250,0);    transition: all .2s ease-in-out 0s;
+}
+.button:hover {
+	box-shadow: 0 0 10px 1px rgba(255,105,180,0.75);
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 6px;
+	border-radius: 8px;
+	position: relative;
+}
+::-webkit-scrollbar-track {
+	/* -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5); */
+	background-color: rgba(255,255,255,1);
+}
+::-webkit-scrollbar-thumb {
+	width: 1px;
+	background: #fff;
+	/* -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5); */
+}
+
+.main {
+	width: 100%;
+	background-color: #fff;
+}
+#home {
+	display: flex;
+	justify-content: left;
+	background: url('../imgs/background.jpg') 20% 25% no-repeat;
+}
+#progress {
+	background-color: #fff;
+}
+.main .slide-page .title {
+	background-image: linear-gradient(to right, rgba(255,255,255,1) 45%, rgba(255,255,255,0.25) 100%);
+	padding: 2rem 10px 10px 10px;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+}
+.main .slide-page .title-background {
+	height: 100%;
+	width: 40%;
+}
+.main .slide-page .title .title-img {
+	width: 80%;
+	z-index: 9;
+}
+.main .slide-page .title .text {
+	background: #00BFFF;
+	border-radius: 5rem;
+	width: 9rem;
+	padding: 30px 30px 30px 50px;
+	font-size: .5rem;
+	margin-left: .3rem;
+	color: #fff;
+}
+.text {
+	background: #00BFFF;
+	border-radius: 2rem;
+	width: 5rem;
+	padding: 20px 20px 20px 30px;
+	font-size: .3rem;
+	margin-left: .3rem;
+	color: #fff;
+}
+#talk {
+}
+h1 {
+	color: #242933;
+	margin: 0;
+}
+h1:after {
+	content: "";
+    display: block;
+    width: 0.6rem;
+    height: 0.1rem;
+    background-color: #3778e5;
+    pointer-events: none;
+    border-radius: 15px;
+    left: -2px;
+    bottom: 0;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.2rem;
+}
+.post {
+	max-width: 1200px;
+	padding: 20px;
+}
+#tutu {
+	background-image:linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0)), url("imgs/tutu.png");
+}
+@media only screen and (max-width: 1200px) {
+	#home {
+		background: url('../imgs/background.jpg') 40% 25% no-repeat;
+	}
+	.main .slide-page .title .title-img {
+		width: 90%;
+	}
+	.main .slide-page .title .text {
+		font-size: 15px;
+		margin-left: .2rem;
+		max-width: 300px;
+		padding: 10px 10px 10px 15px;
+	}
+	.text {
+		font-size: 15px;
+		margin-left: .2rem;
+		max-width: 150px;
+		padding: 10px 10px 10px 15px;
+	}
+}
