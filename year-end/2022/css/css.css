@@ -273,7 +273,8 @@ i {
 	color:#5a5e68;
     display: flex;
 }
-.text-box .progress {
+.progress {
+	width: 100%;
 	overflow: hidden;
     height: 8px;
     border-radius: 0.2rem;
@@ -356,6 +357,9 @@ i {
 }
 #anime li p {
 	margin: 5px;
+}
+#gameLogo span {
+	color:#5a5e68;
 }
 
 .pagination {
