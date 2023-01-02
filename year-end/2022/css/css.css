@@ -321,6 +321,9 @@ i {
 	margin: 0;
 	text-align: center;
 }
+#anime .logobox b {
+	margin: 3px;
+}
 #anime .logobox .first {
 	padding: 1px 5px 1px 5px;
 	border-radius: 5px;
@@ -349,7 +352,7 @@ i {
 #anime li {
 	margin: 0;
 	padding: 5px 5px 5px 15px;
-	border-bottom: 1px #ccc solid;
+	border-bottom: 1px #ccc dotted;
 }
 #anime li p {
 	margin: 5px;

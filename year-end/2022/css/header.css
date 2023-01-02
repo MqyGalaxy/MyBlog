@@ -40,7 +40,7 @@ body {
 }
  
 .spinner > div {
-  background-color: #fdf4e5;
+  background-color: #0077ff;
   height: 100%;
   width: 6px;
   display: inline-block;
