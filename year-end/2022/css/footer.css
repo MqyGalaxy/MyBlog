@@ -1,7 +1,63 @@
-/* background: #aa1f00; box: #fdf4e5; */
 footer {
-	padding: 30px;
-	background-color:rgb(95, 19, 19);
-	color: #fff;
-	font-size: .1rem;
+	background: #f4f4f6;
+	color: #A9A9A9;
+    margin-top: 30px;
+	font-size: 14px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+    font-size: .1rem;
+	bottom: 0;
+}
+.footer .iconfont {
+	font-size: 25px;
+	margin: 0 10px 10px 0;
+	cursor: pointer; 
+}
+.footer-LOGO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+.footer-LOGO img {
+	width: 200px;
+}
+.footer-copyright p {
+	text-align: left;
+}
+.footer a {
+	color: #16162e;
+}
+.footer a:hover {
+	color: #FF69B4;
+}
+.footer-links {
+	color: #e7e7e7;
+	cursor: pointer; 
+}
+.footer .content {
+    margin: 20px;
+}
+
+.footer-copyright {
+	color: #A9A9A9;
+}
+
+
+@media only screen and (max-width: 900px) {
+	footer {
+		display: block;
+		text-align: center;
+	}
+	.footer-copyright p {
+		text-align: center;
+	}
+	.footer .iconfont {
+		font-size: 28px;
+		margin: 20px 15px 20px 15px;
+	}
 }
