@@ -405,11 +405,13 @@
                 <div class="moeqy-account-box">
                     <div class="title" style="margin-top: 20px;">扫描二维码分享链接</div>
 					<div class="logoBox" id="share-img">
-						<img src="imgs/share.png">
+						<img src="imgs/share.png" style="background: rgb(255, 228, 248,.5); border-radius: 10px;">
+						<p class="text" id="shareLink">https://blog.moeqy.com/year-end/2022</p>
+						<input id="input">
 					</div>
 					<p style="text-align: center;">或者点击下方复制链接</p>
-					<div class="buttonBox" style="margin-top: 10px;margin-bottom: 10px;">
-						<a href="https://blog.moeqy.com/Bangumi/" target="_blank"><div class="button">点此分享</div></a>
+					<div class="buttonBox" style="margin-top: 10px;margin-bottom: 15px;">
+						<a onclick="copyText()"><div class="button">点此分享</div></a>
 					</div>
                 </div>
                 <a href="#" class="InfoClose"><div>关闭</div></a>
@@ -424,6 +426,16 @@
 				useSwipe: true
 			})
 			window.slide = slide
+		</script>
+		<script type="text/javascript">
+			function copyText() {
+				var text = document.getElementById("shareLink").innerText;
+				var input = document.getElementById("input");
+				input.value = text; // 修改文本框的内容
+				input.select(); // 选中文本
+				document.execCommand("copy"); // 执行浏览器复制命令
+				alert("复制成功");
+			}
 		</script>
     </body>
 </html>

@@ -35,7 +35,7 @@
 	z-index: 1000;
     left: .5rem;
     bottom: .5rem;
-    background: rgba(255,255,255,1);
+    background: #fff;
     border: 1px solid #e6e7eb !important;
 	border-radius: 10px;
 	height: auto;
@@ -117,6 +117,16 @@
 }
 #share:target {
     display:flex;
+}
+#share .text {
+    color: #ccc;
+    font-size: 10px;
+}
+#share #Input {
+    position:absolute;
+    top:-10000px;
+    opacity: 0;
+    z-inde:-10;
 }
 
 @media only screen and (max-width: 900px) {
