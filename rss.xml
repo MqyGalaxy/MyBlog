@@ -26,28 +26,56 @@
 	.ny i {
 	color: #FF4500;
 	}
+  .botton {
+    background: #FF0000;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    margin: 0 10px 0 10px;
+    transition: all .2s ease-out 0s;
+    min-width: 200px;
+    text-align: center;
+  }
+  .botton:hover {
+    box-shadow: 0 0 0.75rem #FF0000;
+    transition: all .2s ease-out 0s;
+  }
+  .box {
+    margin: 5px;
+  }
 &lt;/style&gt;
 	&lt;div class=&#34;ny&#34; style=&#34;margin-bottom: 30px;&#34;&gt;
     &lt;div style=&#34;font-size: 30px; text-align:center;&#34;&gt;
-		&lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
-    &lt;span id=&#34;t_d&#34;&gt;&lt;/span&gt;
-    &lt;span id=&#34;t_h&#34;&gt;&lt;/span&gt;
-    &lt;span id=&#34;t_m&#34;&gt;&lt;/span&gt;
-    &lt;span id=&#34;t_s&#34;&gt;&lt;/span&gt;
-		&lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
+      &lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
+        &lt;!--
+        &lt;span id=&#34;t_d&#34;&gt;&lt;/span&gt;
+        &lt;span id=&#34;t_h&#34;&gt;&lt;/span&gt;
+        &lt;span id=&#34;t_m&#34;&gt;&lt;/span&gt;
+        &lt;span id=&#34;t_s&#34;&gt;&lt;/span&gt;
+        --&gt;
+        &amp;#8194;春节快乐
+      &lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
     &lt;/div&gt;
-  &lt;!--
-	&lt;div style=&#34;font-size: 10px;&#34;&gt;
-	距离春节假期结束还剩：
-	&lt;span id=&#34;t_d&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
-	&lt;span id=&#34;t_h&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
-	。注意时间哦~
-	&lt;/div&gt;
-  --&gt;
+    &lt;div style=&#34;display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; margin-top: 30px; margin-bottom: 30px;&#34;&gt;
+      &lt;div class=&#34;box&#34;&gt;
+        &lt;a href=&#34;https://www.bilibili.com/blackboard/2023GameSFG-ZP.html?spm_id_from=333.337.0.0&#34; target=&#34;_blank&#34; title=&#34;bilibili&#34;&gt;&lt;div class=&#34;botton&#34;&gt;查看2023年新春节目表&lt;/div&gt;&lt;/a&gt;
+        &lt;span style=&#34;display: block; font-size: 10px; text-align: center; width: 100%;&#34;&gt;*内容来自bilibili&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;box&#34;&gt;
+        &lt;a href=&#34;/year-end/2022/&#34; target=&#34;_blank&#34;&gt;&lt;div class=&#34;botton&#34;&gt;查看小站年终总结&lt;/div&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;font-size: 10px; text-align: right;&#34;&gt;
+      距离春节假期结束还剩：
+      &lt;span id=&#34;t_d&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
+      &lt;span id=&#34;t_h&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
+      。注意时间哦~
+    &lt;/div&gt;
 	&lt;/div&gt;
 &lt;script type=&#34;text/javascript&#34;&gt;
     function getRTime(){
-        var EndTime= new Date(&#39;2023/01/22 00:00:00&#39;); //截止时间
+        var EndTime= new Date(&#39;2023/01/28 00:00:00&#39;); //截止时间
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
         var d=Math.floor(t/1000/60/60/24);
