@@ -10,95 +10,8 @@
         </author>
         <description>在回忆的白纸上&lt;br&gt;绘上梦想的碎片</description>
         <language>zh-CN,en,ja,default</language>
-        <pubDate>Fri, 20 Jan 2023 11:04:00 +0800</pubDate>
-        <lastBuildDate>Fri, 20 Jan 2023 11:04:00 +0800</lastBuildDate>
-        <item>
-            <guid isPermalink="true">https://blog.moeqy.com/Chinese-New-Year/</guid>
-            <title>兔兔~！2023春节倒计时！</title>
-            <link>https://blog.moeqy.com/Chinese-New-Year/</link>
-            <pubDate>Fri, 20 Jan 2023 11:04:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;春节倒计时&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#春节倒计时&#34;&gt;#&lt;/a&gt; 春节倒计时&lt;/h1&gt;
-&lt;p&gt;2023 年春节时间：2023 年 1 月 22 日 星期日 农历正月初一&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目前距离 2023 年春节过年还有：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div&gt;
-&lt;style&gt;
-	.ny i {
-	color: #FF4500;
-	}
-  .botton {
-    background: #FF0000;
-    border-radius: 5px;
-    height: 50px;
-    padding: 10px;
-    color: #fff;
-    margin: 0 10px 0 10px;
-    transition: all .2s ease-out 0s;
-    min-width: 200px;
-    text-align: center;
-  }
-  .botton:hover {
-    box-shadow: 0 0 0.75rem #FF0000;
-    transition: all .2s ease-out 0s;
-  }
-  .box {
-    margin: 5px;
-  }
-&lt;/style&gt;
-	&lt;div class=&#34;ny&#34; style=&#34;margin-bottom: 30px;&#34;&gt;
-    &lt;div style=&#34;font-size: 30px; text-align:center;&#34;&gt;
-      &lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
-        &lt;!--
-        &lt;span id=&#34;t_d&#34;&gt;&lt;/span&gt;
-        &lt;span id=&#34;t_h&#34;&gt;&lt;/span&gt;
-        &lt;span id=&#34;t_m&#34;&gt;&lt;/span&gt;
-        &lt;span id=&#34;t_s&#34;&gt;&lt;/span&gt;
-        --&gt;
-        &amp;#8194;春节快乐
-      &lt;i class=&#34;ic i-cjdl&#34;&gt;&lt;/i&gt;
-    &lt;/div&gt;
-    &lt;div style=&#34;display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; margin-top: 30px; margin-bottom: 30px;&#34;&gt;
-      &lt;div class=&#34;box&#34;&gt;
-        &lt;a href=&#34;https://www.bilibili.com/blackboard/2023GameSFG-ZP.html?spm_id_from=333.337.0.0&#34; target=&#34;_blank&#34; title=&#34;bilibili&#34;&gt;&lt;div class=&#34;botton&#34;&gt;查看2023年新春节目表&lt;/div&gt;&lt;/a&gt;
-        &lt;span style=&#34;display: block; font-size: 10px; text-align: center; width: 100%;&#34;&gt;*内容来自bilibili&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;box&#34;&gt;
-        &lt;a href=&#34;/year-end/2022/&#34; target=&#34;_blank&#34;&gt;&lt;div class=&#34;botton&#34;&gt;查看小站年终总结&lt;/div&gt;&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div style=&#34;font-size: 10px; text-align: right;&#34;&gt;
-      距离春节假期结束还剩：
-      &lt;span id=&#34;t_d&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
-      &lt;span id=&#34;t_h&#34; style=&#34;color: #FF69B4;&#34;&gt;&lt;/span&gt;
-      。注意时间哦~
-    &lt;/div&gt;
-	&lt;/div&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-    function getRTime(){
-        var EndTime= new Date(&#39;2023/01/28 00:00:00&#39;); //截止时间
-        var NowTime = new Date();
-        var t =EndTime.getTime() - NowTime.getTime();
-        var d=Math.floor(t/1000/60/60/24);
-        var h=Math.floor(t/1000/60/60%24);
-        var m=Math.floor(t/1000/60%60);
-        var s=Math.floor(t/1000%60);
-        document.getElementById(&#34;t_d&#34;).innerHTML = d + &#34; 天&#34;;
-        document.getElementById(&#34;t_h&#34;).innerHTML = h + &#34; 小时&#34;;
-        document.getElementById(&#34;t_m&#34;).innerHTML = m + &#34; 分&#34;;
-        document.getElementById(&#34;t_s&#34;).innerHTML = s + &#34; 秒&#34;;
-    }
-    setInterval(getRTime,1000);
-    &lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img data-src=&#34;/assets/poster-CNY-2023.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;MqyGalaxy - bilibili&#34; style=&#34;--block-color:#FF0000;&#34;&gt;&lt;a href=&#34;/year-end/2022/&#34; class=&#34;image&#34; data-background-image=&#34;/images/404.png&#34;&gt;&lt;/a&gt;
-          &lt;div class=&#34;info&#34;&gt;
-          &lt;a href=&#34;/year-end/2022/&#34; class=&#34;title&#34;&gt;MyBlog 2022年终总结&lt;/a&gt;
-          &lt;p class=&#34;desc&#34;&gt;查看小站的年终总结！&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
- ]]></description>
-        </item>
+        <pubDate>Fri, 02 Dec 2022 09:30:00 +0800</pubDate>
+        <lastBuildDate>Fri, 02 Dec 2022 09:30:00 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://blog.moeqy.com/announcement/</guid>
             <title>公告：关于友情链接</title>
@@ -1802,6 +1715,59 @@ D. 辱骂该番观众，以此表达自己的优越感。​&lt;/p&gt;
 而且根据目前的审核制度，“未来” 一词更是缥缈虚无。&lt;/p&gt;
 &lt;p&gt;游戏也是文化输出的一部分。无论是《原神》还是《明日方舟》等游戏，都在向外输出中国文化。但是不是所有的制作公司都可以做到这样，大多数制作公司或者个人都是依靠 steam 发布游戏。&lt;br /&gt;
 而文化审核却是文化输出的把柄。在当今的某些人还在嘲讽别人精日精欧时，却往往忽略了我们在这方面的文化输出。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://blog.moeqy.com/life/20210101/post-1/</guid>
+            <title>2020年，我和MyBlog</title>
+            <link>https://blog.moeqy.com/life/20210101/post-1/</link>
+            <category term="生活杂谈" scheme="https://blog.moeqy.com/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%B0%88/" />
+            <category term="生活杂谈" scheme="https://blog.moeqy.com/tags/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%B0%88/" />
+            <category term="年终总结" scheme="https://blog.moeqy.com/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" />
+            <pubDate>Fri, 01 Jan 2021 13:56:48 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;2021 已经到来了。&lt;/p&gt;
+&lt;p&gt;MyBlog (MqyGalaxy|Blog) 作为一个刚部署的小站，暂有一些不完善的地方，看着可能会有点乱，希望大家谅解；也谢谢陪伴我的各位，2021 年新年快乐！&lt;br /&gt;
+关于网站的部署，在 2020 年 6 月 2 日 MqyGalaxy|Blog 正式部署，并且也在同时研究 html；2020 年 6 月 24 日将网站整体推掉重做，并改名为 “MyBlog (MqyGalaxy|Blog)”，将网站整体美化；最后在 2020 年 10 月 25 日认识了 hexo，才有了现在的样子。&lt;br /&gt;
+在这里再次感谢 &lt;code&gt;@霜月琉璃&lt;/code&gt; 大佬提供的主题 &lt;code&gt;Shoka&lt;/code&gt; ，ta 的主题非常的棒；也希望我能在今后的学习中制作一个美观实用的主题。&lt;br /&gt;
+目前为止，网站一直使用的是 Github Pages 部署，域名还是暂定为 &lt;code&gt;mqygalaxy.github.io&lt;/code&gt; ，在今后可能会考虑购买一个新的域名。&lt;/p&gt;
+&lt;h1 id=&#34;主要大事件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主要大事件&#34;&gt;#&lt;/a&gt; 主要大事件&lt;/h1&gt;
+&lt;h2 id=&#34;生活方面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生活方面&#34;&gt;#&lt;/a&gt; 生活方面&lt;/h2&gt;
+&lt;p&gt;这一年最大的事情肯定是 2020 年的疫情，这次疫情对于我个人的影响也很大；&lt;br /&gt;
+其次就是出国，也是因为疫情整的非常麻烦 = =。&lt;br /&gt;
+希望全世界的疫情都好起来吧，大家都要注意个人安全啊！&lt;/p&gt;
+&lt;h2 id=&#34;acg方面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#acg方面&#34;&gt;#&lt;/a&gt; ACG 方面：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在 2020 年，我总共追 / 补番 &lt;code&gt;61&lt;/code&gt;  部，其中最喜欢的有《魔女之旅》《CLANNAD》《偶像大师》《魔法少女奈叶》等。&lt;/li&gt;
+&lt;li&gt;在 2020 年，我入手了《新次元游戏海王星 VIIR》《Muse Dash》等，但居然没有入《赛博朋克 2077》&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;没钱没配置&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;在 2020 年，我玩过的游戏：
+&lt;ul&gt;
+&lt;li&gt;其中包含了：回合制、音游、手游、FPS、RTS、弹幕射击、&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;gal&lt;/span&gt; 等；&lt;/li&gt;
+&lt;li&gt;手游中最喜欢的游戏：《明日方舟》；&lt;/li&gt;
+&lt;li&gt;FPS 玩的最久的游戏：《Counter-Strike:Global Offensive》；&lt;/li&gt;
+&lt;li&gt;喜欢的东方同人作品：《射命丸文的酉间坊纪行》《寂静的故乡》等；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;喜欢的世界观：《东方 Project》《超次元游戏海王星》等；&lt;/li&gt;
+&lt;li&gt;在 2020 年，最失望的番剧是《刀剑神域 Alicization War of Underworld THE LAST SEASON》。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;up主方面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#up主方面&#34;&gt;#&lt;/a&gt; UP 主方面&lt;/h2&gt;
+&lt;p&gt;鸽了很久，希望我没事・・・・・・&lt;br /&gt;
+继续深造，但由于电脑硬件限制无法使用 AE 等&lt;/p&gt;
+&lt;h1 id=&#34;往后计划&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#往后计划&#34;&gt;#&lt;/a&gt; 往后计划&lt;/h1&gt;
+&lt;p&gt;首先！先祝我的学业进步。&lt;/p&gt;
+&lt;p&gt;虽然 2020 年鸽了许久，但在 2021 年我还是要当一个 UP 主，详见&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcXlnYWxheHkuZ2l0aHViLmlvL2xpZmUvMjAyMDA5MDkvcG9zdC0xLw==&#34;&gt;视频更新情况以及 UP 之后走向&lt;/span&gt; ；&lt;br /&gt;
+而且已经打算制作自己的 Live2D：&lt;/p&gt;
+&lt;div class=&#34;note danger&#34;&gt;
+&lt;p&gt;自设图生成自 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9waWNyZXcubWUv&#34;&gt;picrew&lt;/span&gt; ，本人遵守该网站协议并且不会使用于商业用途。&lt;br /&gt;
+ &lt;code&gt;禁止转载&lt;/code&gt; ！&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/MqyGalaxy-1.png&#34; alt=&#34;avatar&#34; height=&#34;300&#34; width=&#34;300&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;MyBlog 在今后也会尝试更多内容！并且打算自己制作 / 魔改主题。&lt;/p&gt;
+&lt;p&gt;我也会继续探索自己的爱好，提升自己的技术。&lt;/p&gt;
+&lt;h1 id=&#34;最后&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最后&#34;&gt;#&lt;/a&gt; 最后&lt;/h1&gt;
+&lt;p&gt;以上就是 2020 年 MyBlog 和我的总结，也希望 2021 年能够更近一步！&lt;br /&gt;
+祝大家 2021 年新年快乐！&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
