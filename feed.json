@@ -7,14 +7,6 @@
     "home_page_url": "https://blog.moeqy.com",
     "items": [
         {
-            "id": "https://blog.moeqy.com/comefrom1987/index/",
-            "url": "https://blog.moeqy.com/comefrom1987/index/",
-            "title": "来自1987年的信",
-            "date_published": "2023-03-31T16:00:00.000Z",
-            "content_html": "<p>这是一封来自 1987 年的信封。<br />\n当我找到它时，泛黄的纸页丝毫无法掩盖充满回忆的文笔。在这里我分享给大家，让大家记住独属于那个年代的美。</p>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<p>加油！<br />\n<img data-src=\"/assets/lol.jpg\" alt=\"lol\" title=\"这是谢芙蒂，她能一人杀穿莱彻。说谢谢谢芙蒂。\" width=\"300px\" /></p>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<p>加油！<br />\n<img data-src=\"/assets/lol.jpg\" alt=\"lol\" title=\"这是谢芙蒂，她能一人杀穿莱彻。说谢谢谢芙蒂。\" width=\"300px\" /></p>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<details><summary>???</summary><div>\n<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 60%\">\n    <iframe src=\"//player.bilibili.com/player.html?aid=928861104&bvid=BV1uT4y1P7CX&cid=287639008&page=1&high_quality=1\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"position: absolute; width:100%; height:100%; left: 0; top: 0;\"> </iframe>\n</div>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n</div></details>\n",
-            "tags": []
-        },
-        {
             "id": "https://blog.moeqy.com/announcement/",
             "url": "https://blog.moeqy.com/announcement/",
             "title": "公告：关于网站头像不显示、加载慢的问题",
@@ -288,6 +280,18 @@
                 "游戏杂谈",
                 "游戏",
                 "Steam"
+            ]
+        },
+        {
+            "id": "https://blog.moeqy.com/life/20210101/post-1/",
+            "url": "https://blog.moeqy.com/life/20210101/post-1/",
+            "title": "2020年，我和MyBlog",
+            "date_published": "2021-01-01T05:56:48.000Z",
+            "content_html": "<h1 id=\"前言\"><a class=\"anchor\" href=\"#前言\">#</a> 前言</h1>\n<p>2021 已经到来了。</p>\n<p>MyBlog (MqyGalaxy|Blog) 作为一个刚部署的小站，暂有一些不完善的地方，看着可能会有点乱，希望大家谅解；也谢谢陪伴我的各位，2021 年新年快乐！<br />\n关于网站的部署，在 2020 年 6 月 2 日 MqyGalaxy|Blog 正式部署，并且也在同时研究 html；2020 年 6 月 24 日将网站整体推掉重做，并改名为 “MyBlog (MqyGalaxy|Blog)”，将网站整体美化；最后在 2020 年 10 月 25 日认识了 hexo，才有了现在的样子。<br />\n在这里再次感谢 <code>@霜月琉璃</code> 大佬提供的主题 <code>Shoka</code> ，ta 的主题非常的棒；也希望我能在今后的学习中制作一个美观实用的主题。<br />\n目前为止，网站一直使用的是 Github Pages 部署，域名还是暂定为 <code>mqygalaxy.github.io</code> ，在今后可能会考虑购买一个新的域名。</p>\n<h1 id=\"主要大事件\"><a class=\"anchor\" href=\"#主要大事件\">#</a> 主要大事件</h1>\n<h2 id=\"生活方面\"><a class=\"anchor\" href=\"#生活方面\">#</a> 生活方面</h2>\n<p>这一年最大的事情肯定是 2020 年的疫情，这次疫情对于我个人的影响也很大；<br />\n其次就是出国，也是因为疫情整的非常麻烦 = =。<br />\n希望全世界的疫情都好起来吧，大家都要注意个人安全啊！</p>\n<h2 id=\"acg方面\"><a class=\"anchor\" href=\"#acg方面\">#</a> ACG 方面：</h2>\n<ul>\n<li>在 2020 年，我总共追 / 补番 <code>61</code>  部，其中最喜欢的有《魔女之旅》《CLANNAD》《偶像大师》《魔法少女奈叶》等。</li>\n<li>在 2020 年，我入手了《新次元游戏海王星 VIIR》《Muse Dash》等，但居然没有入《赛博朋克 2077》<span class=\"spoiler\" title=\"你知道得太多了\">没钱没配置</span>。</li>\n<li>在 2020 年，我玩过的游戏：\n<ul>\n<li>其中包含了：回合制、音游、手游、FPS、RTS、弹幕射击、<span class=\"spoiler\" title=\"你知道得太多了\">gal</span> 等；</li>\n<li>手游中最喜欢的游戏：《明日方舟》；</li>\n<li>FPS 玩的最久的游戏：《Counter-Strike:Global Offensive》；</li>\n<li>喜欢的东方同人作品：《射命丸文的酉间坊纪行》《寂静的故乡》等；</li>\n</ul>\n</li>\n<li>喜欢的世界观：《东方 Project》《超次元游戏海王星》等；</li>\n<li>在 2020 年，最失望的番剧是《刀剑神域 Alicization War of Underworld THE LAST SEASON》。</li>\n</ul>\n<h2 id=\"up主方面\"><a class=\"anchor\" href=\"#up主方面\">#</a> UP 主方面</h2>\n<p>鸽了很久，希望我没事・・・・・・<br />\n继续深造，但由于电脑硬件限制无法使用 AE 等</p>\n<h1 id=\"往后计划\"><a class=\"anchor\" href=\"#往后计划\">#</a> 往后计划</h1>\n<p>首先！先祝我的学业进步。</p>\n<p>虽然 2020 年鸽了许久，但在 2021 年我还是要当一个 UP 主，详见<span class=\"exturl\" data-url=\"aHR0cHM6Ly9tcXlnYWxheHkuZ2l0aHViLmlvL2xpZmUvMjAyMDA5MDkvcG9zdC0xLw==\">视频更新情况以及 UP 之后走向</span> ；<br />\n而且已经打算制作自己的 Live2D：</p>\n<div class=\"note danger\">\n<p>自设图生成自 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9waWNyZXcubWUv\">picrew</span> ，本人遵守该网站协议并且不会使用于商业用途。<br />\n <code>禁止转载</code> ！</p>\n</div>\n<p><img data-src=\"/images/MqyGalaxy-1.png\" alt=\"avatar\" height=\"300\" width=\"300\" /></p>\n<p>MyBlog 在今后也会尝试更多内容！并且打算自己制作 / 魔改主题。</p>\n<p>我也会继续探索自己的爱好，提升自己的技术。</p>\n<h1 id=\"最后\"><a class=\"anchor\" href=\"#最后\">#</a> 最后</h1>\n<p>以上就是 2020 年 MyBlog 和我的总结，也希望 2021 年能够更近一步！<br />\n祝大家 2021 年新年快乐！</p>\n",
+            "tags": [
+                "生活杂谈",
+                "生活杂谈",
+                "年终总结"
             ]
         }
     ]
