@@ -8,7 +8,75 @@
     <author>
       <name>MqyGalaxy</name>
     </author>
-    <updated>2023-05-27T01:25:48.000Z</updated>
+    <updated>2023-05-27T05:38:00.000Z</updated>
+    <entry>
+        <id>https://blog.moeqy.com/announcement/</id>
+        <title>公告：小站开放赞助通道</title>
+        <link rel="alternate" href="https://blog.moeqy.com/announcement/"/>
+        <content type="html">&lt;p&gt;原本是把小站的赞助功能给关掉了的，一开始也没想过让读者为小站支付。&lt;br /&gt;
+但是最近学业比较繁忙，很难花费更多精力来打理小站。希望能通过赞助来填补小站的维护费用和拿去买点饮料喝 QwQ&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt; 也有可能拿去追梦&lt;/span&gt;。更新虽然比较慢但小站保证还会继续更新。&lt;/p&gt;
+&lt;p&gt;总之如果您喜欢小站的内容，有能力的话希望您能支持下小站。&lt;br /&gt;
+在收到赞助后，我会公开赞助列表以表感谢。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/reward/&#34;&gt;点击此处前往赞助页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你也可以在文章末尾找到  &lt;code&gt;赞赏&lt;/code&gt;  按钮进行赞助。&lt;/p&gt;
+&lt;p&gt;这是非强制性的！您在赞助后也不会在小站中获得特权，请三思而后行。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;ps. 未具有独立经济能力的人和未成年人请勿打赏，因为你们的钱能用到对你们来说更需要的地方 QwQ。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;保留的公告&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2023/04/08&lt;/strong&gt;&lt;br /&gt;
+ 由于 JsDelivr 在国内停止了服务&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;被墙&lt;/span&gt;，导致小站的头像在国内的其他站点（友情链接头像等）无法正常显示。&lt;br /&gt;
+在这里我非常抱歉没有及时发现这个问题，因为我这边一直都是正常显示的。直到刚才才确认确实有这一回事。并且最近也比较忙于学业，疏忽了博客和网站的打理。&lt;/p&gt;
+&lt;p&gt;如果有友情链接的好友看到这里，可以把我的头像替换为 Cravatar 的头像，如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351&#34; alt=&#34;网站头像&#34; title=&#34;Cravatar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在友链页面添加了不同的头像链接可供选择，您可以根据您所在的地区选择。&lt;/p&gt;
+&lt;p&gt;如果 Gravatar 也无法使用了的话请在留言版反馈。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2022/12/02&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;最近重新更新了一下友链，因为无法访问一位小伙伴 @一叶三秋 的链接，导致我一直以为他的网站挂了。&lt;br /&gt;
+但经过确定发现他的网站是正常的，于是将他的网站状态更新为正常，并且在这里公开道个歉！QAQ&lt;/p&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;一叶三秋⚡️&#34; style=&#34;--block-color:#00BFFF;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34; data-background-image=&#34;https://ghser.com/img/tx.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34;&gt;一叶三秋&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;一只00后萌新伪后浪的咸鱼&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022/11/08&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;小站最近发现已经有未经允许的商业宣传评论。虽然我个人认为大多数这样的评论估计都是机器人自动发的，但还是声明一下评论区须知：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本站有关发布、传播信息的媒介，包括但不限于评论等功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;禁止使用于&lt;strong&gt;未经允许的商业宣传&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;禁止发布&lt;strong&gt;引起争议性的评论&lt;/strong&gt;，包括但不限于议政、歧视、引战等内容；&lt;/li&gt;
+&lt;li&gt;禁止发布违反&lt;strong&gt;相关法律法规、道德风俗&lt;/strong&gt;的评论；&lt;/li&gt;
+&lt;li&gt;以上内容也适用于&lt;strong&gt;头像、昵称等&lt;/strong&gt;，能够传播信息的功能。禁止包含恶意链接、二维码、商业邮箱等传播路径；&lt;/li&gt;
+&lt;li&gt;在相关评论区中，您可以发布有关内容的分享，或者基于此内容的见解和讨论。本站希望评论区能够保持互联网知识分享的价值；&lt;/li&gt;
+&lt;li&gt;相关内容的讨论和申请，请在其讨论范围以内进行。请勿在其他地方提及。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多详情请参考小站的&lt;a href=&#34;/faq/&#34;&gt;评论规则&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;小站希望评论区能够保持一个良好的交流环境。小站作为一个非商业性质的个人博客，本身也是一个普通人捣鼓许久的一个作品。希望大家光临小站时，能够保持一个基本的礼节，通过恰当的交流互相了解对方，并且保持大家一个良好的交流环境。&lt;/p&gt;
+&lt;p&gt;虽然只是我个人的哔哔，估计真发广告的小传单人也不会看。就当是我写了一条说说记录我的博客第一次出现这么多商业广告吧。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022/08/27&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
+现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022 更早&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
+注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
+&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;MyBlog 目前还在进行规划，您现在所看到的主页并不是最终完成的内容&lt;br /&gt;
+目前打算在小站中塞下学习笔记、ACG、爱好等内容&lt;br /&gt;
+如若内容过于复杂，则打算将学习笔记腾到分站&lt;/p&gt;
+&lt;/div&gt;
+</content>
+        <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
+        <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
+        <updated>2023-05-27T05:38:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://blog.moeqy.com/acg/game/20230506/post-1/</id>
         <title>【游戏评测】《崩坏：星穹铁道》崩坏宇宙的扩张雏形</title>
@@ -72,9 +140,9 @@
 &lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h1&gt;
 &lt;div class=&#34;note default no-icon&#34;&gt;
 &lt;p&gt;&lt;strong&gt;视频引用：&lt;/strong&gt;&lt;br /&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMXJoNHkxbjc3Zg==&#34;&gt;https://www.bilibili.com/video/BV1rh4y1n77f&lt;/span&gt; | bilibili：《崩坏：星穹铁道》OP：「星间旅行」by @崩坏星穹铁道&lt;/p&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMXJoNHkxbjc3Zg==&#34;&gt;https://www.bilibili.com/video/BV1rh4y1n77f&lt;/span&gt; | bilibili |《崩坏：星穹铁道》OP：「星间旅行」by @崩坏星穹铁道&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;音频引用：&lt;/strong&gt;&lt;br /&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvcGxheWxpc3Q/aWQ9NzAxMDg0Njk3Mg==&#34;&gt;https://music.163.com/#/playlist?id=7010846972&lt;/span&gt; | 网易云音乐：崩坏：星穹铁道（全收录）by @澟丶&lt;/p&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvcGxheWxpc3Q/aWQ9NzAxMDg0Njk3Mg==&#34;&gt;https://music.163.com/#/playlist?id=7010846972&lt;/span&gt; | 网易云音乐 | 崩坏：星穹铁道（全收录） by @澟丶&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;图像引用：&lt;/strong&gt;&lt;br /&gt;
 《崩坏：星穹铁道》by miHoYo&lt;/p&gt;
 &lt;/div&gt;
@@ -91,65 +159,6 @@
         <category term="miHoYo" scheme="https://blog.moeqy.com/tags/miHoYo/" />
         <category term="HoYoverse" scheme="https://blog.moeqy.com/tags/HoYoverse/" />
         <updated>2023-05-27T01:25:48.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://blog.moeqy.com/announcement/</id>
-        <title>公告：大陆地区可使用Cravatar作为友链头像</title>
-        <link rel="alternate" href="https://blog.moeqy.com/announcement/"/>
-        <content type="html">&lt;p&gt;由于 JsDelivr 在国内停止了服务&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;被墙&lt;/span&gt;，导致小站的头像在国内的其他站点（友情链接头像等）无法正常显示。&lt;br /&gt;
-在这里我非常抱歉没有及时发现这个问题，因为我这边一直都是正常显示的。直到刚才才确认确实有这一回事。并且最近也比较忙于学业，疏忽了博客和网站的打理。&lt;/p&gt;
-&lt;p&gt;如果有友情链接的好友看到这里，可以把我的头像替换为 Cravatar 的头像，如下所示：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351&#34; alt=&#34;网站头像&#34; title=&#34;Cravatar&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在友链页面添加了不同的头像链接可供选择，您可以根据您所在的地区选择。&lt;/p&gt;
-&lt;p&gt;如果 Gravatar 也无法使用了的话请在留言版反馈。&lt;/p&gt;
-&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;保留的公告&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;&lt;strong&gt;2022/12/02&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;最近重新更新了一下友链，因为无法访问一位小伙伴 @一叶三秋 的链接，导致我一直以为他的网站挂了。&lt;br /&gt;
-但经过确定发现他的网站是正常的，于是将他的网站状态更新为正常，并且在这里公开道个歉！QAQ&lt;/p&gt;
-&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;一叶三秋⚡️&#34; style=&#34;--block-color:#00BFFF;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34; data-background-image=&#34;https://ghser.com/img/tx.jpg&#34;&gt;&lt;/span&gt;
-          &lt;div class=&#34;info&#34;&gt;
-          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34;&gt;一叶三秋&lt;/span&gt;
-          &lt;p class=&#34;desc&#34;&gt;一只00后萌新伪后浪的咸鱼&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022/11/08&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;小站最近发现已经有未经允许的商业宣传评论。虽然我个人认为大多数这样的评论估计都是机器人自动发的，但还是声明一下评论区须知：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本站有关发布、传播信息的媒介，包括但不限于评论等功能：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;禁止使用于&lt;strong&gt;未经允许的商业宣传&lt;/strong&gt;；&lt;/li&gt;
-&lt;li&gt;禁止发布&lt;strong&gt;引起争议性的评论&lt;/strong&gt;，包括但不限于议政、歧视、引战等内容；&lt;/li&gt;
-&lt;li&gt;禁止发布违反&lt;strong&gt;相关法律法规、道德风俗&lt;/strong&gt;的评论；&lt;/li&gt;
-&lt;li&gt;以上内容也适用于&lt;strong&gt;头像、昵称等&lt;/strong&gt;，能够传播信息的功能。禁止包含恶意链接、二维码、商业邮箱等传播路径；&lt;/li&gt;
-&lt;li&gt;在相关评论区中，您可以发布有关内容的分享，或者基于此内容的见解和讨论。本站希望评论区能够保持互联网知识分享的价值；&lt;/li&gt;
-&lt;li&gt;相关内容的讨论和申请，请在其讨论范围以内进行。请勿在其他地方提及。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;更多详情请参考小站的&lt;a href=&#34;/faq/&#34;&gt;评论规则&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;小站希望评论区能够保持一个良好的交流环境。小站作为一个非商业性质的个人博客，本身也是一个普通人捣鼓许久的一个作品。希望大家光临小站时，能够保持一个基本的礼节，通过恰当的交流互相了解对方，并且保持大家一个良好的交流环境。&lt;/p&gt;
-&lt;p&gt;虽然只是我个人的哔哔，估计真发广告的小传单人也不会看。就当是我写了一条说说记录我的博客第一次出现这么多商业广告吧。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022/08/27&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
-现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022 更早&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
-注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
-&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;MyBlog 目前还在进行规划，您现在所看到的主页并不是最终完成的内容&lt;br /&gt;
-目前打算在小站中塞下学习笔记、ACG、爱好等内容&lt;br /&gt;
-如若内容过于复杂，则打算将学习笔记腾到分站&lt;/p&gt;
-&lt;/div&gt;
-</content>
-        <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
-        <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
-        <updated>2023-04-07T16:20:00.000Z</updated>
     </entry>
     <entry>
         <id>https://blog.moeqy.com/life/20221127/post-1/</id>
