@@ -303,42 +303,42 @@ i {
 	color: #ffb6c1;
 	transition: all .2s ease-in-out 0s;
 }
-.logobox img {
+.logoBox img {
 	height: .5rem;
 	margin: 15px;
 	transition: all .2s ease-in-out 0s;
 }
-.logobox img:hover {
+.logoBox img:hover {
 	opacity: calc(45%);
 	transition: all .2s ease-in-out 0s;
 }
 #anime {
 	box-sizing: border-box;
 }
-#anime .logobox img {
+#anime .logoBox img {
 	border-radius: 10px;
 	height: 3rem;
 }
-#anime .logobox p {
+#anime .logoBox p {
 	margin: 0;
 	text-align: center;
 }
-#anime .logobox b {
+#anime .logoBox b {
 	margin: 3px;
 }
-#anime .logobox .first {
+#anime .logoBox .first {
 	padding: 1px 5px 1px 5px;
 	border-radius: 5px;
 	background-color: rgb(255, 217, 0);
 	color: #fff;
 }
-#anime .logobox .second {
+#anime .logoBox .second {
 	padding: 1px 5px 1px 5px;
 	border-radius: 5px;
 	background-color: rgb(204, 204, 204);
 	color: #fff;
 }
-#anime .logobox .third {
+#anime .logoBox .third {
 	padding: 1px 5px 1px 5px;
 	border-radius: 5px;
 	background-color: rgb(204, 75, 0);
@@ -426,12 +426,12 @@ i {
 	.post {
 		padding: 10px 10px 10px 10px;
 	}
-	#anime .logobox img {
+	#anime .logoBox img {
 		border-radius: 10px;
 		height: 1.5rem;
 		margin: 5px;
 	}
-	#anime .logobox p {
+	#anime .logoBox p {
 		font-size: 10px;
 	}
 	.pagination {
