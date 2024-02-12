@@ -195,7 +195,7 @@
     }
   }
 &lt;/style&gt;
-&lt;div class=&#34;newyear2024&#34; style=&#34;background: #c02c38;&#34;&gt;
+&lt;div class=&#34;newyear2024&#34; style=&#34;background: #c02c38; border-radius: 10px 10px 0 0;&#34;&gt;
   &lt;div class=&#34;title2024&#34;&gt;
     &lt;div class=&#34;mask&#34;&gt;
       &lt;img data-src=&#34;/images/2024NewYearLOGO.png&#34;&gt;
