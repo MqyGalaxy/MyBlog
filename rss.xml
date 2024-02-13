@@ -56,11 +56,18 @@
   }
   .page2024 .grid, .page2024 .mask {
     display: grid;
+    position: relative;
     width: 100%;
     justify-items: space-evenly;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
+  }
+  .page2024 .grid a {
+    z-index: 2;
+  }
+  .page2024 .grid a:hover {
+    z-index: 3;
   }
   .page2024 .grid div {
     margin-bottom: 20px;
@@ -191,7 +198,6 @@
     }
     .page2024 .mask, .page2024 .grid {
       grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(1,1fr);
     }
   }
 &lt;/style&gt;
@@ -262,7 +268,7 @@
       &lt;li&gt;&lt;b&gt;生活分享&lt;/b&gt;&lt;br&gt;在本页评论区中分享您在新春佳节期间遇到的趣事或者感动的一幕，当然也可以什么都行~！&lt;br&gt;可获得&lt;b&gt;“玥炫”&lt;/b&gt;的Q版立绘。&lt;/li&gt;
       &lt;li&gt;&lt;b&gt;年终总结&lt;/b&gt;&lt;br&gt;前往“年终总结”，观看小站在2023年的趣事和记录！&lt;br&gt;可获得&lt;b&gt;“雪霞”&lt;/b&gt;的Q版立绘以及完整的&lt;b&gt;MyBlog 2024春节贺图&lt;/b&gt;。&lt;/li&gt;
     &lt;/ol&gt;
-    &lt;em&gt;* 活动时间为 2024年2月10日00:00:00至2024年2月31日23:59:59，基于 GMT+8 时区&lt;br&gt;* 完成“跨年寄语”和“生活分享”的其中之一即可获得&lt;b&gt;“玥炫”&lt;/b&gt;的Q版立绘，您不需要重复完成（当然也可以）。&lt;br&gt;* 参与“跨年寄语”和“生活分享”时须填写正确的电子邮件地址才可以获得活动奖励！&lt;br&gt;* &lt;b&gt;“雪霞”&lt;/b&gt;以及&lt;b&gt;&#34;MyBlog 2024春节贺图&#34;&lt;/b&gt;均在“MqyGalaxy|Blog 2023年终总结”页面获取。&lt;/em&gt;
+    &lt;em&gt;* 活动时间为 2024年2月10日00:00:00至2024年2月31日23:59:59，基于 GMT+8 时区。&lt;br&gt;* 完成“跨年寄语”和“生活分享”的其中之一即可获得&lt;b&gt;“玥炫”&lt;/b&gt;的Q版立绘，您不需要重复完成（当然也可以）。&lt;br&gt;* 参与“跨年寄语”和“生活分享”时须填写正确的电子邮件地址才可以获得活动奖励！&lt;br&gt;* &lt;b&gt;“雪霞”&lt;/b&gt;以及&lt;b&gt;&#34;MyBlog 2024春节贺图&#34;&lt;/b&gt;均在“MqyGalaxy|Blog 2023年终总结”页面获取。&lt;/em&gt;
   &lt;/div&gt;
   &lt;div class=&#34;page2024&#34;&gt;
     &lt;div class=&#34;head1&#34;&gt;
