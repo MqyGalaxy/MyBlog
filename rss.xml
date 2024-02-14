@@ -285,7 +285,7 @@
         &lt;span id=&#34;t_s&#34;&gt;&lt;/span&gt;
         &lt;!--&amp;#8194;--&gt;
     &lt;/div&gt;
-    &lt;em&gt;* 开放于 2024年2月15日00:00:00，基于 GMT+8 时区。&lt;/em&gt;
+    &lt;em&gt;* 开放于 2024年2月17日00:00:00，基于 GMT+8 时区。&lt;/em&gt;
     &lt;p&gt;&lt;i&gt;&lt;b style=&#34;font-size: 20px;&#34;&gt;浏览可获得！！！&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;
     &lt;div class=&#34;mask&#34; style=&#34;justify-items: center!important;&#34;&gt;
       &lt;div style=&#34;background: url(/assets/2024Character1_NoBackground.webp) center center/contain no-repeat; width: 300px; height: 300px;&#34;&gt;&lt;b&gt; - 雪霞&lt;/b&gt;&lt;/div&gt;
@@ -324,7 +324,7 @@
 
 &lt;script type=&#34;text/javascript&#34;&gt;
     function getRTime(){
-        var EndTime= new Date(&#39;2024/02/15 00:00:00&#39;); //截止时间
+        var EndTime= new Date(&#39;2024/02/17 00:00:00&#39;); //截止时间
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
         var d=Math.floor(t/1000/60/60/24);
