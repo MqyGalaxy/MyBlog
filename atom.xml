@@ -14,12 +14,8 @@
         <title>【紧急通知】Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码</title>
         <link rel="alternate" href="https://blog.moeqy.com/announcement/"/>
         <content type="html">&lt;h1 id=&#34;你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;#&lt;/a&gt; 你的 ShokaX 和 Shoka 站点可能正在遭遇供应链攻击&lt;/h1&gt;
-&lt;p&gt;据相关安全机构及主流服务商报告，Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码。&lt;/p&gt;
-&lt;p&gt;不幸的是，ShokaX 在 0.4.4 及以前版本中均使用了不可信的 polyfill 服务，因而大部分 ShokaX 站点正在遭受供应链攻击&lt;br /&gt;
-我们建议立刻更新到 0.4.5 版本的 ShokaX 并替换先前部署版本，我们会在稍后废弃 0.4.4 及以前版本&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近将从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。&lt;br /&gt;
-另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题，我们会提供相关支持以便迁移&lt;/p&gt;
-&lt;p&gt;如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
+&lt;p&gt;据相关安全机构及主流服务商报告，Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码。不幸的是，ShokaX 在 0.4.4 及以前版本，以及其前身 Shoka 中均使用了不可信的 polyfill 服务，因而大部分使用 Shoka 的站点正在遭受供应链攻击。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近将从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题。如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
 &lt;p&gt;通过以下文章了解更多：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLXNob2thLXgvaGV4by10aGVtZS1zaG9rYVgvZGlzY3Vzc2lvbnMvMjkz&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX/discussions/293&lt;/span&gt;&lt;/li&gt;
@@ -30,8 +26,9 @@
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wb2x5a2lsbC5pby8=&#34;&gt;https://polykill.io/&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;details class=&#34;info&#34;&gt;&lt;summary&gt;保留的公告&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;&lt;strong&gt;2023/08/22&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt; 博客将会暂时保持准停更状态&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2023/08/22&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;&lt;strong&gt;博客将会暂时保持准停更状态&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由于小站站长忙碌于三次元生活学业，小站将在最近暂时进入停止更新状态。在停更状态时，小站的日常维护还是会持续保持，但文章更新将在以下文章发布后停止：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;【游戏体验】《少女前线 2：追放》内测评测 &lt;em&gt;（标题待定）&lt;/em&gt;&lt;/li&gt;
@@ -51,6 +48,7 @@
 &lt;p&gt;&lt;strong&gt;如果在停更期间需要与我联系，请通过邮箱直接告知我&lt;/strong&gt;。评论区可能无法及时回复，通过邮箱我会在第一时间看到您的留言。&lt;/p&gt;
 &lt;p&gt;感谢各位一直以来对小站的支持！在停更状态结束以后，小站将会恢复正常的更新和交流！&lt;/p&gt;
 &lt;p&gt;感谢与您相遇～！&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;2023/08/22&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;note info no-icon&#34;&gt;
 &lt;p&gt;小站将原本的 “评论规则” 升级为&lt;a href=&#34;/faq/comment-policy&#34;&gt;《评论守则》&lt;/a&gt;，以保持小站评论区积极和谐的交流环境。也以防一些人不注意小站评论规则而留下垃圾评论（商业评论等）。&lt;/p&gt;
