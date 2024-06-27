@@ -21,7 +21,7 @@
             <pubDate>Thu, 27 Jun 2024 02:40:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;#&lt;/a&gt; 你的 ShokaX 和 Shoka 站点可能正在遭遇供应链攻击&lt;/h1&gt;
 &lt;p&gt;据相关安全机构及主流服务商报告，Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码。不幸的是，ShokaX 在 0.4.4 及以前版本，以及其前身 Shoka 中均使用了不可信的 polyfill 服务，因而大部分使用 Shoka 的站点正在遭受供应链攻击。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近将从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题。如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题。如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
 &lt;p&gt;通过以下文章了解更多：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLXNob2thLXgvaGV4by10aGVtZS1zaG9rYVgvZGlzY3Vzc2lvbnMvMjkz&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX/discussions/293&lt;/span&gt;&lt;/li&gt;
