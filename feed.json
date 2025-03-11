@@ -7,6 +7,20 @@
     "home_page_url": "https://blog.moeqy.com",
     "items": [
         {
+            "id": "https://blog.moeqy.com/life/20250311/post-1/",
+            "url": "https://blog.moeqy.com/life/20250311/post-1/",
+            "title": "小吐槽以下我年轻时写的抽象口号",
+            "date_published": "2025-03-11T06:12:48.000Z",
+            "content_html": "<p>最近被学业肘击之余回想起来自己鸽了快一年的博客，于是回来再看了一下自己的博客和网站。<br />\n时隔一段时间感觉自己以前写的东西变成了黑历史一般😂😂😂</p>\n<p>最近正好也在学日语，看到了自己以前写的寄语 “在回忆的白纸上，绘上梦想的碎片。” 配上的日语出处写成了 “真っ白な想いに，夢のかけらを”？现在自己看起来也挺像笑的。当时<span class=\"spoiler\" title=\"你知道得太多了\">现在也</span>很喜欢《白箱》以及其 OP《COLORFUL BOX》，于是想把其中的歌词作为网站的寄语。也就是说，按照原本歌词 “真っ白な想いに　夢のかけらを描いて　動き出す未来” 大意应该是：“在纯白的想象里，描绘着梦的碎片，未来即将启动。” 我漏掉了动词，把描いて当作下一句歌词了😂。</p>\n<p>马上就要接着去考期中了，最近压力蛮大的于是又想起了这部番剧了，《COLORFUL BOX》也在我困难的时期陪伴了我许多，仅此文纪念一下短暂复活的我以及推荐大伙去看《白箱》TV😋。</p>\n<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;\">\n    <iframe src=\"//player.bilibili.com/player.html?isOutside=true&aid=319200219&bvid=BV1Mw41127Tv&cid=1287453048&page=1&high_quality=1&autoplay=0\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"position: absolute; width:100%; height:100%; left: 0; top: 0;\"> </iframe>\n</div>\n\n<div class=\"moegn\">\n    <div class=\"pro-img\">\n        <div class=\"pro-img-body\">\n            <img data-src=\"https://lain.bgm.tv/pic/cover/l/73/26/110467_Fx9tT.jpg\">\n        </div>\n    </div>\n    <div class=\"pro-page\">\n        <div class=\"pro-title\">\n            <div class=\"pro-score\"><span>9</span></div>\n            <div class=\"pro-title-text\">\n                <div class=\"title\">\n                    <div class=\"pro-class\">番剧</div>\n                    <span title=\"白箱\">白箱</span>\n                    <b>SHIROBAKO</b>\n                </div>\n                <div class=\"pro-score-tag\">神作</div>\n            </div>\n        </div>\n        <div class=\"pro-text\">\n            <div class=\"pro-author\">MOEGN 评测</div>\n            <p>《白箱》是由P.A.WORKS制作的一部职场群像剧，也是其“工作女孩系列”的一部动画作品。其中讲述了宫森葵等人在动画业界工作的各种纠葛和挫折，以及他们每一个人在动画制作时所面对的冲突和相互之间的团结。本作对动画制作行业进行了一系列详细的描写，带领观众们体验了许多不同动画制作周期期间所发生的一系列琐事，以及见证每个角色在面对困难时的成长。这部作品是一个特别励志的作品，虽然剧中的人们大多数与我的生活没有多少关系，但是他们为我们展示的是一群创作者突破自我的表现。“所谓的励志，并非美化现实，也不是神化追梦的人。” 而世界上只有一种英雄主义，那就是认清现实之后仍然热爱生活。我们的生活也许就和这“白箱”一样，相较于插画或摄影等制作华丽的贩售用包装相比，仅仅是装入白箱中的录影带或许显得很不起眼。但，在那白箱里却满载着创作者们的心意。</p>\n        </div>\n        <div class=\"pro-link\">\n        </div>\n        <div class=\"pro-read-more\">\n          <span class=\"exturl\" data-url=\"aHR0cHM6Ly9iZ20udHYvc3ViamVjdC8xMTA0Njc=\">Bangumi页面</span>\n           · \n          <span class=\"exturl\" data-url=\"bWFpbHRvOm1haWxAbW9lcXkuY29t\">反馈我们</span>\n        </div>\n        <div class=\"pro-read-more\"></div>\n        <div class=\"powered\">Powered by <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL01xeUdhbGF4eS9NT0VHTg==\">MOEGN</span></div>\n    </div>\n</div>\n",
+            "tags": [
+                "生活杂谈",
+                "生活杂谈",
+                "白箱",
+                "番剧",
+                "MOEQY"
+            ]
+        },
+        {
             "id": "https://blog.moeqy.com/announcement/",
             "url": "https://blog.moeqy.com/announcement/",
             "title": "【紧急通知】Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码",
@@ -278,23 +292,6 @@
             "tags": [
                 "生活杂谈",
                 "生活杂谈"
-            ]
-        },
-        {
-            "id": "https://blog.moeqy.com/acg/game/Genshin-Impact/note/1.5/",
-            "url": "https://blog.moeqy.com/acg/game/Genshin-Impact/note/1.5/",
-            "title": "我的原神日记【1.5】",
-            "date_published": "2021-04-18T01:42:48.000Z",
-            "content_html": "<h1 id=\"1520210418\"><a class=\"anchor\" href=\"#1520210418\">#</a> 1.5（2021/04/18）</h1>\n<p>待补充完整。</p>\n<div class=\"note primary\">\n<p><a href=\"/acg/game/Genshin-Impact/MyGenshinImpact\">主页</a></p>\n</div>\n<h2 id=\"前瞻直播\"><a class=\"anchor\" href=\"#前瞻直播\">#</a> 前瞻直播</h2>\n<ul>\n<li>新角色 <code>八重神子</code> 为我们进行了稻妻部分区域的前瞻讲解。<span class=\"spoiler\" title=\"你知道得太多了\">八重樱？！</span></li>\n<li>公布了 <code>优菈</code> 和 <code>烟绯</code> 将在 1.5 登场。</li>\n<li>两个祈愿池 <code>陵薮市朝</code>  (钟离复刻) 和 <code>浪涌之瞬</code> 。</li>\n<li>1.5 版本中 2 个角色祈愿池分别为：钟离和烟绯 (陵薮市朝)、优菈 (浪涌之瞬)。</li>\n<li>新的武器 <code>松藾响起之时</code> 和圣遗物 <code>千岩牢固</code> 与 <code>苍白之火</code> 。</li>\n<li>新的怪物 <code>骆驼龙王</code> 、 <code>无相之冰</code> 、 <code>深渊咏者·紫电</code> 。</li>\n<li>新系统 <code>尘歌壶</code>  (家园系统)。</li>\n<li>邀约任务第二辑 <code>迪奥娜第一幕</code> 与 <code>诺艾尔第二幕</code> 。</li>\n<li>新的传说任务： <code>钟离第二章</code> 和 <code>优菈第一章</code> 。</li>\n<li>新活动：\n<ul>\n<li>导能原盘・绪论</li>\n<li>精通移涌</li>\n<li>风行迷踪（躲猫猫，好耶！）</li>\n</ul>\n</li>\n<li>优化：\n<ul>\n<li>每周前三次挑战大 BOSS 收取奖励消耗树脂减半。</li>\n<li>多人联机状态下好感度获取加倍。</li>\n<li>限时活动结束前提醒邮件。</li>\n<li>系统设置可自由管理多语言语音包。</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"引用\"><a class=\"anchor\" href=\"#引用\">#</a> 引用</h1>\n<div class=\"note default no-icon\">\n<p><strong>文章引用：</strong><br />\n<span class=\"exturl\" data-url=\"aHR0cHM6Ly93aWtpLmJpbGlnYW1lLmNvbS95cy8lRTUlOEUlOUYlRTclQTUlOUUxLjUlRTclODklODglRTYlOUMlQUMlRTUlODklOEQlRTclOUUlQkIlRTclOUIlQjQlRTYlOTIlQUQlRTYlODAlQkIlRTclQkIlOTM=\">https://wiki.biligame.com/ys/ 原神 1.5 版本前瞻直播总结</span> | bilibili 游戏 原神 WIKI 原神 1.5 版本前瞻直播总结</p>\n<p><strong>借物表：</strong><br />\n<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cucGl4aXYubmV0L2FydHdvcmtzLzg1NjEyNjM5\">https://www.pixiv.net/artworks/85612639</span> | @芒果猫 Official (pixiv) 封面</p>\n</div>\n",
-            "tags": [
-                "ACG",
-                "游戏",
-                "原神专区",
-                "我的原神日记",
-                "ACG",
-                "游戏",
-                "游戏杂谈",
-                "原神"
             ]
         }
     ]
