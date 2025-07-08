@@ -8,7 +8,136 @@
     <author>
       <name>MqyGalaxy</name>
     </author>
-    <updated>2025-06-24T07:09:00.000Z</updated>
+    <updated>2025-07-08T07:00:00.000Z</updated>
+    <entry>
+        <id>https://blog.moeqy.com/announcement/</id>
+        <title>【公告】MOEQY更换Cloudflare作为域名解析服务</title>
+        <link rel="alternate" href="https://blog.moeqy.com/announcement/"/>
+        <content type="html">&lt;h1 id=&#34;小站将开始使用cloudflare的dns解析服务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小站将开始使用cloudflare的dns解析服务&#34;&gt;#&lt;/a&gt; 小站将开始使用 Cloudflare 的 DNS 解析服务&lt;/h1&gt;
+&lt;p&gt;由于近期经常疲于垃圾邮件困扰，并且为了更加方便管理，小站将域名解析服务从 DNSpod 更换为了 Cloudflare。&lt;/p&gt;
+&lt;p&gt;如果大伙因此无法访问  &lt;code&gt;moeqy.com&lt;/code&gt;  的系列网站，或者相关功能无法正常使用，请通过联系方式反馈我们！&lt;/p&gt;
+&lt;p&gt;目前小站部署的网站如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5tb2VxeS5jb20=&#34;&gt;www.moeqy.com&lt;/span&gt;（主页）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.moeqy.com&#34;&gt;blog.moeqy.com&lt;/a&gt;（博客）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3R0dC5tb2VxeS5jb20=&#34;&gt;ttt.moeqy.com&lt;/span&gt;（一个 JS 小游戏）&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2F5YS5tb2VxeS5jb20=&#34;&gt;aya.moeqy.com&lt;/span&gt;（代理维护的东方同人游戏网站）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同时也请大家注意，小站只通过  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  来发送和接收电子邮件， &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  用于自动发送评论通知。除此之外目前不会使用其他任何电子邮箱地址。&lt;/p&gt;
+&lt;h1 id=&#34;公告归档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公告归档&#34;&gt;#&lt;/a&gt; 公告归档&lt;/h1&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2024&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2024/06/27&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;&lt;em&gt;小站已将 Polyfill 更换到更可信的 CDN 服务，并加快了对 ShokaX 的适配。如果您在浏览本站时仍发现不良因素，请通过我们的邮箱  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  联系。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你的 ShokaX 和 Shoka 站点可能正在遭遇供应链攻击&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据相关安全机构及主流服务商报告，Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码。不幸的是，ShokaX 在 0.4.4 及以前版本，以及其前身 Shoka 中均使用了不可信的 polyfill 服务，因而大部分使用 Shoka 的站点正在遭受供应链攻击。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题。如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
+&lt;p&gt;通过以下文章了解更多：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLXNob2thLXgvaGV4by10aGVtZS1zaG9rYVgvZGlzY3Vzc2lvbnMvMjkz&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX/discussions/293&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vbmV3cy9zZWN1cml0eS9wb2x5ZmlsbGlvLWphdmFzY3JpcHQtc3VwcGx5LWNoYWluLWF0dGFjay1pbXBhY3RzLW92ZXItMTAway1zaXRlcy8=&#34;&gt;https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb21tdW5pdHkuZmFzdGx5LmNvbS90L25ldy1vcHRpb25zLWZvci1wb2x5ZmlsbC1pby11c2Vycy8yNTQw&#34;&gt;https://community.fastly.com/t/new-options-for-polyfill-io-users/2540&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zYW5zZWMuaW8vcmVzZWFyY2gvcG9seWZpbGwtc3VwcGx5LWNoYWluLWF0dGFjaw==&#34;&gt;https://sansec.io/research/polyfill-supply-chain-attack&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNsb3VkZmxhcmUuY29tL3BvbHlmaWxsLWlvLW5vdy1hdmFpbGFibGUtb24tY2RuanMtcmVkdWNlLXlvdXItc3VwcGx5LWNoYWluLXJpc2s=&#34;&gt;https://blog.cloudflare.com/polyfill-io-now-available-on-cdnjs-reduce-your-supply-chain-risk&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wb2x5a2lsbC5pby8=&#34;&gt;https://polykill.io/&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2023&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2023/09/28&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;&lt;strong&gt;博客将会暂时保持准停更状态&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于小站站长忙碌于三次元生活学业，小站将在最近暂时进入停止更新状态。在停更状态时，小站的日常维护还是会持续保持，但文章更新将在以下文章发布后停止：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;【游戏体验】《少女前线 2：追放》内测评测 &lt;em&gt;（标题待定）&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在计划中但暂时停止更新的文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;【游戏测评】《星空 Starfield》人类永不放弃追逐浪漫且闪耀的群星 &lt;em&gt;（标题待定）&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Java 从入门到入土 &lt;em&gt;（系列）&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;什么是 “准” 停更&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;准确来说，小站并不会在此期间一直保持完全停更。也许在某一天小站也会突然更新一篇文章？这可能取决于哪一天稍微比较放松 qwq。&lt;br /&gt;
+也因此，小站也不希望因为停更而与小伙伴们失去联络。小站也会保持一定的交流状态，在尽可能的时间里回复小伙伴们的留言。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小站的未来规划&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于 Shoka 主题年久未能保持维护。小站将于不久之后更换为基于 Shoka 主题二次开发的 ShokaX ，并且将基于该主题进行美化。&lt;br /&gt;
+在此期间小站可能会进行修复和维护，一部分功能可能因此暂时无法使用。如果因为维护期间出现 bug，请通过联系方式与我联系。&lt;/p&gt;
+&lt;p&gt;在小站停更期间，如果有友链方面的申请和变动，小站可能无法第一时间进行更新。在此期间我一定会尽力更新友链的最新状态。也请小伙伴们也不要因此嫌弃小站இ௰இ。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果在停更期间需要与我联系，请通过邮箱直接告知我&lt;/strong&gt;。评论区可能无法及时回复，通过邮箱我会在第一时间看到您的留言。&lt;/p&gt;
+&lt;p&gt;感谢各位一直以来对小站的支持！在停更状态结束以后，小站将会恢复正常的更新和交流！&lt;/p&gt;
+&lt;p&gt;感谢与您相遇～！&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2023/08/22&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;小站将原本的 “评论规则” 升级为&lt;a href=&#34;/faq/comment-policy&#34;&gt;《评论守则》&lt;/a&gt;，以保持小站评论区积极和谐的交流环境。也以防一些人不注意小站评论规则而留下垃圾评论（商业评论等）。&lt;/p&gt;
+&lt;p&gt;您也可以通过评论区提醒链接处，或者网页底端连接处访问&lt;a href=&#34;/faq/comment-policy&#34;&gt;《评论守则》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;主要是写着好玩（划掉）&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2023/07/10&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;原本是把小站的赞助功能给关掉了的，一开始也没想过让读者为小站支付。&lt;br /&gt;
+但是最近学业比较繁忙，很难花费更多精力来打理小站。希望能通过赞助来填补小站的维护费用和拿去买点饮料喝 QwQ&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt; 也有可能拿去追梦&lt;/span&gt;。更新虽然比较慢但小站保证还会继续更新。&lt;/p&gt;
+&lt;p&gt;总之如果您喜欢小站的内容，有能力的话希望您能支持下小站。&lt;br /&gt;
+在收到赞助后，我会公开赞助列表以表感谢。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/reward/&#34;&gt;点击此处前往赞助页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你也可以在文章末尾找到  &lt;code&gt;赞赏&lt;/code&gt;  按钮进行赞助。&lt;/p&gt;
+&lt;p&gt;这是非强制性的！您在赞助后也不会在小站中获得特权，请三思而后行。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;ps. 未具有独立经济能力的人和未成年人请勿打赏，因为你们的钱能用到对你们来说更需要的地方 QwQ。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2023/04/08&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;由于 JsDelivr 在国内停止了服务&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;被墙&lt;/span&gt;，导致小站的头像在国内的其他站点（友情链接头像等）无法正常显示。&lt;br /&gt;
+在这里我非常抱歉没有及时发现这个问题，因为我这边一直都是正常显示的。直到刚才才确认确实有这一回事。并且最近也比较忙于学业，疏忽了博客和网站的打理。&lt;/p&gt;
+&lt;p&gt;如果有友情链接的好友看到这里，可以把我的头像替换为 Cravatar 的头像，如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351&#34; alt=&#34;网站头像&#34; title=&#34;Cravatar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在友链页面添加了不同的头像链接可供选择，您可以根据您所在的地区选择。&lt;/p&gt;
+&lt;p&gt;如果 Gravatar 也无法使用了的话请在留言版反馈。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2022&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2022/12/02&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;最近重新更新了一下友链，因为无法访问一位小伙伴 @一叶三秋 的链接，导致我一直以为他的网站挂了。&lt;br /&gt;
+但经过确定发现他的网站是正常的，于是将他的网站状态更新为正常，并且在这里公开道个歉！QAQ&lt;/p&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;一叶三秋⚡️&#34; style=&#34;--block-color:#00BFFF;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34; data-background-image=&#34;https://ghser.com/img/tx.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34;&gt;一叶三秋&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;一只00后萌新伪后浪的咸鱼&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022/11/08&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;小站最近发现已经有未经允许的商业宣传评论。虽然我个人认为大多数这样的评论估计都是机器人自动发的，但还是声明一下评论区须知：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本站有关发布、传播信息的媒介，包括但不限于评论等功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;禁止使用于&lt;strong&gt;未经允许的商业宣传&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;禁止发布&lt;strong&gt;引起争议性的评论&lt;/strong&gt;，包括但不限于议政、歧视、引战等内容；&lt;/li&gt;
+&lt;li&gt;禁止发布违反&lt;strong&gt;相关法律法规、道德风俗&lt;/strong&gt;的评论；&lt;/li&gt;
+&lt;li&gt;以上内容也适用于&lt;strong&gt;头像、昵称等&lt;/strong&gt;，能够传播信息的功能。禁止包含恶意链接、二维码、商业邮箱等传播路径；&lt;/li&gt;
+&lt;li&gt;在相关评论区中，您可以发布有关内容的分享，或者基于此内容的见解和讨论。本站希望评论区能够保持互联网知识分享的价值；&lt;/li&gt;
+&lt;li&gt;相关内容的讨论和申请，请在其讨论范围以内进行。请勿在其他地方提及。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多详情请参考小站的&lt;a href=&#34;/faq/&#34;&gt;评论规则&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;小站希望评论区能够保持一个良好的交流环境。小站作为一个非商业性质的个人博客，本身也是一个普通人捣鼓许久的一个作品。希望大家光临小站时，能够保持一个基本的礼节，通过恰当的交流互相了解对方，并且保持大家一个良好的交流环境。&lt;/p&gt;
+&lt;p&gt;虽然只是我个人的哔哔，估计真发广告的小传单人也不会看。就当是我写了一条说说记录我的博客第一次出现这么多商业广告吧。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022/08/27&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
+现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022 更早&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
+注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
+&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+</content>
+        <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
+        <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
+        <updated>2025-07-08T07:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://blog.moeqy.com/website/blog/20250624/post-1/</id>
         <title>运用AI生成和平面设计零绘画基础设计自己个人网站的看板娘</title>
@@ -211,121 +340,6 @@
         <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
         <category term="萌趣MOEQY" scheme="https://blog.moeqy.com/tags/%E8%90%8C%E8%B6%A3MOEQY/" />
         <updated>2025-03-11T06:12:48.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://blog.moeqy.com/announcement/</id>
-        <title>【紧急通知】Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码</title>
-        <link rel="alternate" href="https://blog.moeqy.com/announcement/"/>
-        <content type="html">&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;小站已将 Polyfill 更换到更可信的 CDN 服务，并加快了对 ShokaX 的适配。如果您在浏览本站时仍发现不良因素，请通过我们的邮箱  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  联系。&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id=&#34;你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#你的-shokax-和-shoka-站点可能正在遭遇供应链攻击&#34;&gt;#&lt;/a&gt; 你的 ShokaX 和 Shoka 站点可能正在遭遇供应链攻击&lt;/h1&gt;
-&lt;p&gt;据相关安全机构及主流服务商报告，Polyfill 服务极大概率参与了供应链攻击并分发了恶意代码。不幸的是，ShokaX 在 0.4.4 及以前版本，以及其前身 Shoka 中均使用了不可信的 polyfill 服务，因而大部分使用 Shoka 的站点正在遭受供应链攻击。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小站现在已经开始加快移植的进程，将于最近从 Shoka 移植至 ShokaX（0.4.5）&lt;/strong&gt;，更新完成后将发布公告（或文章）通知。另外，建议 Shoka 用户立刻更新到 ShokaX 以修复此问题。如果可能，请您将相关内容转发给使用 polyfill io 且尚未修改的项目，感谢您的合作！&lt;/p&gt;
-&lt;p&gt;通过以下文章了解更多：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLXNob2thLXgvaGV4by10aGVtZS1zaG9rYVgvZGlzY3Vzc2lvbnMvMjkz&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX/discussions/293&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vbmV3cy9zZWN1cml0eS9wb2x5ZmlsbGlvLWphdmFzY3JpcHQtc3VwcGx5LWNoYWluLWF0dGFjay1pbXBhY3RzLW92ZXItMTAway1zaXRlcy8=&#34;&gt;https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb21tdW5pdHkuZmFzdGx5LmNvbS90L25ldy1vcHRpb25zLWZvci1wb2x5ZmlsbC1pby11c2Vycy8yNTQw&#34;&gt;https://community.fastly.com/t/new-options-for-polyfill-io-users/2540&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zYW5zZWMuaW8vcmVzZWFyY2gvcG9seWZpbGwtc3VwcGx5LWNoYWluLWF0dGFjaw==&#34;&gt;https://sansec.io/research/polyfill-supply-chain-attack&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNsb3VkZmxhcmUuY29tL3BvbHlmaWxsLWlvLW5vdy1hdmFpbGFibGUtb24tY2RuanMtcmVkdWNlLXlvdXItc3VwcGx5LWNoYWluLXJpc2s=&#34;&gt;https://blog.cloudflare.com/polyfill-io-now-available-on-cdnjs-reduce-your-supply-chain-risk&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wb2x5a2lsbC5pby8=&#34;&gt;https://polykill.io/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;公告归档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公告归档&#34;&gt;#&lt;/a&gt; 公告归档&lt;/h1&gt;
-&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2023&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;&lt;strong&gt;2023/09/28&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;&lt;strong&gt;博客将会暂时保持准停更状态&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由于小站站长忙碌于三次元生活学业，小站将在最近暂时进入停止更新状态。在停更状态时，小站的日常维护还是会持续保持，但文章更新将在以下文章发布后停止：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;【游戏体验】《少女前线 2：追放》内测评测 &lt;em&gt;（标题待定）&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;在计划中但暂时停止更新的文章：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;【游戏测评】《星空 Starfield》人类永不放弃追逐浪漫且闪耀的群星 &lt;em&gt;（标题待定）&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Java 从入门到入土 &lt;em&gt;（系列）&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;什么是 “准” 停更&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;准确来说，小站并不会在此期间一直保持完全停更。也许在某一天小站也会突然更新一篇文章？这可能取决于哪一天稍微比较放松 qwq。&lt;br /&gt;
-也因此，小站也不希望因为停更而与小伙伴们失去联络。小站也会保持一定的交流状态，在尽可能的时间里回复小伙伴们的留言。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小站的未来规划&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由于 Shoka 主题年久未能保持维护。小站将于不久之后更换为基于 Shoka 主题二次开发的 ShokaX ，并且将基于该主题进行美化。&lt;br /&gt;
-在此期间小站可能会进行修复和维护，一部分功能可能因此暂时无法使用。如果因为维护期间出现 bug，请通过联系方式与我联系。&lt;/p&gt;
-&lt;p&gt;在小站停更期间，如果有友链方面的申请和变动，小站可能无法第一时间进行更新。在此期间我一定会尽力更新友链的最新状态。也请小伙伴们也不要因此嫌弃小站இ௰இ。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如果在停更期间需要与我联系，请通过邮箱直接告知我&lt;/strong&gt;。评论区可能无法及时回复，通过邮箱我会在第一时间看到您的留言。&lt;/p&gt;
-&lt;p&gt;感谢各位一直以来对小站的支持！在停更状态结束以后，小站将会恢复正常的更新和交流！&lt;/p&gt;
-&lt;p&gt;感谢与您相遇～！&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2023/08/22&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;小站将原本的 “评论规则” 升级为&lt;a href=&#34;/faq/comment-policy&#34;&gt;《评论守则》&lt;/a&gt;，以保持小站评论区积极和谐的交流环境。也以防一些人不注意小站评论规则而留下垃圾评论（商业评论等）。&lt;/p&gt;
-&lt;p&gt;您也可以通过评论区提醒链接处，或者网页底端连接处访问&lt;a href=&#34;/faq/comment-policy&#34;&gt;《评论守则》&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;主要是写着好玩（划掉）&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2023/07/10&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;原本是把小站的赞助功能给关掉了的，一开始也没想过让读者为小站支付。&lt;br /&gt;
-但是最近学业比较繁忙，很难花费更多精力来打理小站。希望能通过赞助来填补小站的维护费用和拿去买点饮料喝 QwQ&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt; 也有可能拿去追梦&lt;/span&gt;。更新虽然比较慢但小站保证还会继续更新。&lt;/p&gt;
-&lt;p&gt;总之如果您喜欢小站的内容，有能力的话希望您能支持下小站。&lt;br /&gt;
-在收到赞助后，我会公开赞助列表以表感谢。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/reward/&#34;&gt;点击此处前往赞助页面&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;你也可以在文章末尾找到  &lt;code&gt;赞赏&lt;/code&gt;  按钮进行赞助。&lt;/p&gt;
-&lt;p&gt;这是非强制性的！您在赞助后也不会在小站中获得特权，请三思而后行。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;ps. 未具有独立经济能力的人和未成年人请勿打赏，因为你们的钱能用到对你们来说更需要的地方 QwQ。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2023/04/08&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;由于 JsDelivr 在国内停止了服务&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;被墙&lt;/span&gt;，导致小站的头像在国内的其他站点（友情链接头像等）无法正常显示。&lt;br /&gt;
-在这里我非常抱歉没有及时发现这个问题，因为我这边一直都是正常显示的。直到刚才才确认确实有这一回事。并且最近也比较忙于学业，疏忽了博客和网站的打理。&lt;/p&gt;
-&lt;p&gt;如果有友情链接的好友看到这里，可以把我的头像替换为 Cravatar 的头像，如下所示：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351&#34; alt=&#34;网站头像&#34; title=&#34;Cravatar&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在友链页面添加了不同的头像链接可供选择，您可以根据您所在的地区选择。&lt;/p&gt;
-&lt;p&gt;如果 Gravatar 也无法使用了的话请在留言版反馈。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2022&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;&lt;strong&gt;2022/12/02&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;最近重新更新了一下友链，因为无法访问一位小伙伴 @一叶三秋 的链接，导致我一直以为他的网站挂了。&lt;br /&gt;
-但经过确定发现他的网站是正常的，于是将他的网站状态更新为正常，并且在这里公开道个歉！QAQ&lt;/p&gt;
-&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;一叶三秋⚡️&#34; style=&#34;--block-color:#00BFFF;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34; data-background-image=&#34;https://ghser.com/img/tx.jpg&#34;&gt;&lt;/span&gt;
-          &lt;div class=&#34;info&#34;&gt;
-          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9naHNlci5jb20=&#34;&gt;一叶三秋&lt;/span&gt;
-          &lt;p class=&#34;desc&#34;&gt;一只00后萌新伪后浪的咸鱼&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022/11/08&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;小站最近发现已经有未经允许的商业宣传评论。虽然我个人认为大多数这样的评论估计都是机器人自动发的，但还是声明一下评论区须知：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本站有关发布、传播信息的媒介，包括但不限于评论等功能：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;禁止使用于&lt;strong&gt;未经允许的商业宣传&lt;/strong&gt;；&lt;/li&gt;
-&lt;li&gt;禁止发布&lt;strong&gt;引起争议性的评论&lt;/strong&gt;，包括但不限于议政、歧视、引战等内容；&lt;/li&gt;
-&lt;li&gt;禁止发布违反&lt;strong&gt;相关法律法规、道德风俗&lt;/strong&gt;的评论；&lt;/li&gt;
-&lt;li&gt;以上内容也适用于&lt;strong&gt;头像、昵称等&lt;/strong&gt;，能够传播信息的功能。禁止包含恶意链接、二维码、商业邮箱等传播路径；&lt;/li&gt;
-&lt;li&gt;在相关评论区中，您可以发布有关内容的分享，或者基于此内容的见解和讨论。本站希望评论区能够保持互联网知识分享的价值；&lt;/li&gt;
-&lt;li&gt;相关内容的讨论和申请，请在其讨论范围以内进行。请勿在其他地方提及。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;更多详情请参考小站的&lt;a href=&#34;/faq/&#34;&gt;评论规则&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;小站希望评论区能够保持一个良好的交流环境。小站作为一个非商业性质的个人博客，本身也是一个普通人捣鼓许久的一个作品。希望大家光临小站时，能够保持一个基本的礼节，通过恰当的交流互相了解对方，并且保持大家一个良好的交流环境。&lt;/p&gt;
-&lt;p&gt;虽然只是我个人的哔哔，估计真发广告的小传单人也不会看。就当是我写了一条说说记录我的博客第一次出现这么多商业广告吧。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022/08/27&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;由于 LeanCloud 国际版通用域名于 8 月 1 日不再支持国内用户的访问。因此本站的评论可能在此之后受到了影响。&lt;br /&gt;
-现在应该回复访问了，如若有任何问题请反馈给邮箱： &lt;code&gt;mail#moeqy.com&lt;/code&gt; 。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;2022 更早&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;note info no-icon&#34;&gt;
-&lt;p&gt;懒狗终于把  &lt;code&gt;Valine-Admin&lt;/code&gt;  给搞上了，在今后您的评论受到回复后会收到一封来自  &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  的提示邮件。&lt;br /&gt;
-注意不要回复哦～这是系统生成的，我不会去看的。联系请食用  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  哦～&lt;/p&gt;
-&lt;p&gt;详情请跳转至：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMS8=&#34;&gt;《MoeQY 评论回复自动邮件说明》&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb2VxeS5jb20vYW5ub3VuY2VtZW50LzIwMjIwNDMwL3Bvc3QtMi8=&#34;&gt;《MoeQY 隐私协议更新说明》&lt;/span&gt;。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-</content>
-        <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
-        <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
-        <updated>2024-06-26T18:40:00.000Z</updated>
     </entry>
     <entry>
         <id>https://blog.moeqy.com/acg/game/20240603/post-1/</id>
