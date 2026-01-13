@@ -1,0 +1,208 @@
+.moegn {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    background: var(--grey-0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px var(--grey-9-a1);
+    position: relative;
+}
+
+.pro-img {
+    width: 20%;
+    margin: 0;
+}
+@media only screen and (max-width: 1900px) {
+	.pro-img {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .moegn {
+        padding: 10px;
+    }
+	.pro-img {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        width: 80px;
+    }
+    .pro-score {
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+    }
+    .moegn .powered {
+        right: 30px!important;
+    }
+}
+.pro-img-body {
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px var(--grey-9-a1);
+    margin: 0;
+}
+.pro-img-body img {
+    width: 100%;
+    margin: 0!important;
+}
+
+.pro-page {
+    padding: 20px;
+    width: 100%;
+}
+
+.pro-author {
+    color: var(--grey-6);
+    font-size: 14px;
+}
+
+.pro-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.pro-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(to right,var(--color-pink) 0,var(--color-orange) 100%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin: 0;
+    cursor: pointer;
+}
+.pro-score-tag {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: -10px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color-red-a3);
+    text-transform: uppercase;
+    letter-spacing: 1;
+}
+.pro-title-text {
+    position: relative;
+    margin-left: 10px;
+    flex: 1;
+    width: 0; 
+}
+.pro-title-text .title .pro-class {
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+.pro-title-text .title {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+}
+.pro-title-text .title .pro-class {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+.pro-title-text .title span {
+    margin: 0; 
+    width: 90%;
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@media only screen and (max-width: 760px) {
+    .pro-title-text {
+        margin-left: 0;
+    }
+	.pro-title-text .title .pro-class {
+        font-size: 12px;
+    }
+    .pro-title-text .title span {
+        font-size: 20px;
+    }
+    .pro-score-tag {
+        font-size: 2.5rem;
+    }
+    .pro-score {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        font-size: 20px;
+    }
+    .pro-title-text .title b {
+        bottom: -10px!important;
+    }
+    .moegn .powered, .pro-link, .pro-read-more {
+        font-size: 10px!important;
+    }
+    .moegn .powered, .pro-read-more {
+        bottom: 10px!important;
+    }
+}
+.pro-title-text .title b {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-5);
+    letter-spacing: 1;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.pro-text {
+    margin-top: 20px;
+}
+.pro-text p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.moegn .powered, .pro-read-more, .pro-link {
+    font-size: 12px;
+    color: var(--grey-6);
+}
+.moegn .powered, .pro-read-more {
+    position: absolute;
+    bottom: 15px;
+}
+
+.pro-link {
+    line-height: 12px;
+    margin-top: 5px;
+}
+
+.pro-read-more a{
+    color: var(--grey-6)!important;
+}
+.pro-read-more a:hover{
+    color: var(--color-blue)!important;
+}
+
+.moegn .powered {
+    text-align: right;
+    right: 40px;
+}
