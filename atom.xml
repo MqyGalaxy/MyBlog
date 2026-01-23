@@ -253,8 +253,8 @@
 </content>
         <category term="推文" scheme="https://blog.moeqy.com/categories/tweets/" />
         <category term="ACG" scheme="https://blog.moeqy.com/tags/ACG/" />
-        <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
         <category term="推文" scheme="https://blog.moeqy.com/tags/%E6%8E%A8%E6%96%87/" />
+        <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
         <category term="番剧杂谈" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7%E6%9D%82%E8%B0%88/" />
         <updated>2025-07-24T04:55:00.000Z</updated>
     </entry>
