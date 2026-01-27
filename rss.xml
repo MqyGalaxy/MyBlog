@@ -10,82 +10,29 @@
         </author>
         <description>在回忆的白纸上&lt;br&gt;绘上梦想的碎片</description>
         <language>zh-CN,en,ja,default</language>
-        <pubDate>Mon, 13 Oct 2025 01:30:00 +0800</pubDate>
-        <lastBuildDate>Mon, 13 Oct 2025 01:30:00 +0800</lastBuildDate>
-        <item>
-            <guid isPermalink="true">https://blog.moeqy.com/tweets/20251013/post-1/</guid>
-            <title>Sora 2 横空出世：AI 视频的新篇章</title>
-            <link>https://blog.moeqy.com/tweets/20251013/post-1/</link>
-            <category term="推文" scheme="https://blog.moeqy.com/categories/tweets/" />
-            <category term="计算机科学" scheme="https://blog.moeqy.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="人工智能 / AI" scheme="https://blog.moeqy.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-AI/" />
-            <category term="AI视频生成" scheme="https://blog.moeqy.com/tags/AI%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90/" />
-            <category term="Sora 2" scheme="https://blog.moeqy.com/tags/Sora-2/" />
-            <category term="OpenAI" scheme="https://blog.moeqy.com/tags/OpenAI/" />
-            <category term="推文" scheme="https://blog.moeqy.com/tags/%E6%8E%A8%E6%96%87/" />
-            <pubDate>Mon, 13 Oct 2025 01:30:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
-&lt;p&gt;当大家开始享受 10 月 1 号的黄金假期时，Sora 2 就这么突然地震撼发布了。它的发布毫无预兆，在此之前 Sora 的讨论度也远不比其他热门的视频生成模型，但 Sora 2 一经发布却再次引爆了全世界对 AI 视频生成的热潮。在我大致体验了 Sora 2 的感受来看，Sora 2 的火爆不仅仅是因为它是 OpenAI 的全新作品，Sora 2 的高完成度、简易性以及大量可生成内容更加体现出 OpenAI 在人工智能领域拥有更多的经验和充足的训练数据 —— 这是目前绝大部分 AI 生成模型所无法做到的。&lt;/p&gt;
-&lt;p&gt;在此之前，我乐此不疲地享受了 Wan2.2 给我带来的乐趣。说实话，当我第一次在本地部署 Wan2.2 后其丰富的动态效果给我带来了不少震撼，所以我一直想写一个有关 AI 视频生成模型的文章。但我再怎么也没有意识到，在 Veo3 和正在付费测试 Wan2.5 以外，一款使用几乎 0 成本、操作简单的 Sora 2 就这么突然横空出世了。你只需要从其他已经成功注册了 Sora 的用户那获得邀请码，就能随时随地使用 Sora 2 创作心中所想的画面。&lt;/p&gt;
-&lt;h1 id=&#34;生成画面预览&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成画面预览&#34;&gt;#&lt;/a&gt; 生成画面预览&lt;/h1&gt;
-&lt;p&gt;我尝试用 Sora 2 生成了一些现实风格的视频以及模仿了一些动漫预告 PV 来做了测试。对于一些知名动画来说，不需要很明显的提示词就能准确生成出对应的角色。例如：&lt;/p&gt;
-&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;模仿动漫 游戏人生 生成一个它的第二季预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览一&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820168906&amp;p=5&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34;  scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;预览二&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820169367&amp;p=6&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;预览三&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820170451&amp;p=7&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;生成一个有关fate stay night saber线动漫预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览一&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820167477&amp;p=2&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;预览二&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820298615&amp;p=3&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;模仿动漫 ぼっち・ざ・ろっく！生成一个它的第二季预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820167721&amp;p=4&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;通过一些详细描述场景的自然语言提示词，也可以做到生成以下场景：&lt;/p&gt;
-&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;生成一段模仿fate动漫画风的动漫，配音为日语 出场角色为saber, 以下为分镜： （背景为夜晚正在下雨的城市，镜头从saber坚定的双眼开始拉远到正好能看到她上半身的距离） saber用双手举起湖中剑（saber持剑的姿势应该是剑刃朝上），释放出一阵蓝色风场。随后湖中剑的剑刃爆发出金光。最后saber大喊：Excalibur！&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览&lt;/summary&gt;&lt;div&gt;
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
-    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820102250&amp;p=1&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;但比较可惜的是，尽管 Sora 2 对 Fate 角色和画风有足够多的数据训练（甚至还可以让它生成出老 Fate 的画风），但就不知道为什么像咖喱棒这种武器却无法精确地生成出来。我试过了用 “湖中剑”“石中剑” 以及 “Excalibur” 都无法精确生成。看起来 Sora 的动漫训练数据更注重与角色的声音和画风，而不是物件。&lt;/p&gt;
-&lt;p&gt;我还尝试了只输入一段简单的提示词来生成一些比较新的动漫，但效果都不怎么好。例如《别当欧尼酱了！》，真寻和动漫的画风以及角色的声音都能完美复现，但其他角色基本上就是剧中角色大融合。应该需要用户输入更详细的角色描述来生成。最新的动漫就完全不在训练数据当中了（这是当然的！），网络上那些通过 Sora2 生成的新番画面大多数都导入了图片进行了图生视频，完全依靠提示词应该是不行的，并且角色的声音也对不上。&lt;/p&gt;
-&lt;p&gt;我还尝试用 Sora2 生成过三次元视频，例如：&lt;/p&gt;
-&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;一个中国bilibili的动漫区美女up主拍摄了介绍萌趣MOEQY的视频。她着重讲解了萌趣作为一个MqyGalaxy的个人站点，可以浏览有趣的博客文章和一些个人项目。她在讲解的途中顺带展示了这张网站截图（上传的图片）。她说的话都有对应正确的字幕，右上角有她账号的bilibili水印。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;实际效果就不发了，怕容易引起误导。但 Sora 2 的亮点确能完美体现在这里：无论时虚拟角色的体态、言语，甚至视频字幕（虽然有时候会瞎填）和 b 站 up 主水印都能完全生成出来，这个效果确实太强了。感兴趣的话可以复制这个提示词外加一张小站的截图到 Sora2 看看效果。&lt;/p&gt;
-&lt;h1 id=&#34;狂欢过后便是索然无味&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#狂欢过后便是索然无味&#34;&gt;#&lt;/a&gt; 狂欢过后，便是索然无味&lt;/h1&gt;
-&lt;p&gt;在我高强度地玩了一个下午的 Sora 2 后，我不得不说：相较于 Wan2.2 等一些本地部署要求极高的模型来说，Sora 2 更像是抖音一样的社交媒体，用户只需要在手机上打开 Sora APP 输入提示词就能让自己的想法变成画面，然后就能上传到 Sora 应用自带的社交平台上供其他人观赏。对于我来说，相较于大多数人在创作的角度担心使用 Sora 2 会不会造成一些道德隐患问题，更让我感到的是这样毫无付出的创意实现过程仅仅只是昙花一现，新鲜感一过便再也没有去特意打开过 Sora 2 了。但又对于自己图一乐的角度来说，Wan2.2 这种本地部署且没有限制的模型才更能让人玩出花来。更何况随着开源模型的不断进化，尽管可能存在数据训练上的不足，但实际效果和社区的创意发展肯定是会比这些闭源模型更加丰富。&lt;/p&gt;
-&lt;p&gt;AI 生成式工具，最终也只能仅仅作为玩具以及创作工具存在。它并不能成为创作本身，因为创作最重要的还是人在其中的互动和付出。&lt;/p&gt;
- ]]></description>
-        </item>
+        <pubDate>Wed, 28 Jan 2026 04:40:00 +0800</pubDate>
+        <lastBuildDate>Wed, 28 Jan 2026 04:40:00 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://blog.moeqy.com/announcement/</guid>
-            <title>【公告】小站DNS解析接入EdgeOne</title>
+            <title>【公告】小站恢复正常</title>
             <link>https://blog.moeqy.com/announcement/</link>
             <category term="公告" scheme="https://blog.moeqy.com/categories/%E5%85%AC%E5%91%8A/" />
             <category term="公告" scheme="https://blog.moeqy.com/tags/%E5%85%AC%E5%91%8A/" />
-            <pubDate>Sat, 26 Jul 2025 07:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;726更新-尝试使用edgeone&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#726更新-尝试使用edgeone&#34;&gt;#&lt;/a&gt; 7/26 更新 尝试使用 EdgeOne&lt;/h1&gt;
+            <pubDate>Wed, 28 Jan 2026 04:40:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;忘记续费域名了qwq&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#忘记续费域名了qwq&#34;&gt;#&lt;/a&gt; 忘记续费域名了 QWQ&lt;/h1&gt;
+&lt;p&gt;小站挂了整整三天，这个笨蛋站长才发现域名没续费！现在网站已经恢复正常了。&lt;br /&gt;
+如果在此期间有友链的朋友们看到这里，请顺便恢复一下小站的友链状态。谢谢您！&lt;/p&gt;
+&lt;p&gt;另外，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxlYW5jbG91ZC5hcHAvc2RrL2Fubm91bmNlbWVudHMvc3Vuc2V0LWFubm91bmNlbWVudA==&#34;&gt;LeanCloud 即将停止对外所有服务&lt;/span&gt;。目前正在尝试寻找替代的服务平台。如果您正在使用 LeanCloud 的服务请注意在明年 1 月 12 日之前导出数据！&lt;/p&gt;
+&lt;h1 id=&#34;公告归档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公告归档&#34;&gt;#&lt;/a&gt; 公告归档&lt;/h1&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2025&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;2025/07/08&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;note info no-icon&#34;&gt;
+&lt;p&gt;&lt;strong&gt;7/26 更新 尝试使用 EdgeOne&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;小站自从接入 Cloudflare 后对于国内访问问题真的燃尽了，最后尝试用腾讯的 EdgeOne 来缓解一下问题，目前国内访问状况如下：&lt;br /&gt;
 &lt;img data-src=&#34;/assets/post/2025/0724announcement.webp&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;EdgeOne 还有一个中国大陆访问专用的功能，但是域名没备案所以就暂时没用，就先这么勉强这用吧。&lt;br /&gt;
 至于 EdgeOne 的免费功能能用多久我就不知道了，到期了就只能接着用 Cloudflare 的解析了。&lt;/p&gt;
-&lt;h1 id=&#34;708公告-小站将开始使用cloudflare的dns解析服务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#708公告-小站将开始使用cloudflare的dns解析服务&#34;&gt;#&lt;/a&gt; 7/08 公告 小站将开始使用 Cloudflare 的 DNS 解析服务&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;7/08 公告 小站将开始使用 Cloudflare 的 DNS 解析服务&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由于近期经常疲于垃圾邮件困扰，并且为了更加方便管理，小站将域名解析服务从 DNSpod 更换为了 Cloudflare。&lt;/p&gt;
 &lt;p&gt;如果大伙因此无法访问  &lt;code&gt;moeqy.com&lt;/code&gt;  的系列网站，或者相关功能无法正常使用，请通过联系方式反馈我们！&lt;/p&gt;
 &lt;p&gt;目前小站部署的网站如下：&lt;/p&gt;
@@ -97,7 +44,8 @@
 &lt;/ul&gt;
 &lt;p&gt;同时也请大家注意，小站只通过  &lt;code&gt;mail#moeqy.com&lt;/code&gt;  来发送和接收电子邮件， &lt;code&gt;myblog#moeqy.com&lt;/code&gt;  用于自动发送评论通知。除此之外目前不会使用其他任何电子邮箱地址。&lt;/p&gt;
 &lt;p&gt;关于更多有关 Cloudflare 的更新说明，请参阅 萌趣 MOEQY 的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubW9lcXkuY29tL2dvbmdnYW8vMjAyNTA3MDgvcG9zdC0xLw==&#34;&gt;隐私协议更新说明&lt;/span&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;公告归档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公告归档&#34;&gt;#&lt;/a&gt; 公告归档&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
 &lt;details class=&#34;info&#34;&gt;&lt;summary&gt;2024&lt;/summary&gt;&lt;div&gt;
 &lt;p&gt;&lt;strong&gt;2024/06/27&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;note info no-icon&#34;&gt;
@@ -209,14 +157,75 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://blog.moeqy.com/tweets/20251013/post-1/</guid>
+            <title>Sora 2 横空出世：AI 视频的新篇章</title>
+            <link>https://blog.moeqy.com/tweets/20251013/post-1/</link>
+            <category term="推文" scheme="https://blog.moeqy.com/categories/tweets/" />
+            <category term="推文" scheme="https://blog.moeqy.com/tags/%E6%8E%A8%E6%96%87/" />
+            <category term="计算机科学" scheme="https://blog.moeqy.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="人工智能 / AI" scheme="https://blog.moeqy.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-AI/" />
+            <category term="AI视频生成" scheme="https://blog.moeqy.com/tags/AI%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90/" />
+            <category term="Sora 2" scheme="https://blog.moeqy.com/tags/Sora-2/" />
+            <category term="OpenAI" scheme="https://blog.moeqy.com/tags/OpenAI/" />
+            <pubDate>Mon, 13 Oct 2025 01:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;当大家开始享受 10 月 1 号的黄金假期时，Sora 2 就这么突然地震撼发布了。它的发布毫无预兆，在此之前 Sora 的讨论度也远不比其他热门的视频生成模型，但 Sora 2 一经发布却再次引爆了全世界对 AI 视频生成的热潮。在我大致体验了 Sora 2 的感受来看，Sora 2 的火爆不仅仅是因为它是 OpenAI 的全新作品，Sora 2 的高完成度、简易性以及大量可生成内容更加体现出 OpenAI 在人工智能领域拥有更多的经验和充足的训练数据 —— 这是目前绝大部分 AI 生成模型所无法做到的。&lt;/p&gt;
+&lt;p&gt;在此之前，我乐此不疲地享受了 Wan2.2 给我带来的乐趣。说实话，当我第一次在本地部署 Wan2.2 后其丰富的动态效果给我带来了不少震撼，所以我一直想写一个有关 AI 视频生成模型的文章。但我再怎么也没有意识到，在 Veo3 和正在付费测试 Wan2.5 以外，一款使用几乎 0 成本、操作简单的 Sora 2 就这么突然横空出世了。你只需要从其他已经成功注册了 Sora 的用户那获得邀请码，就能随时随地使用 Sora 2 创作心中所想的画面。&lt;/p&gt;
+&lt;h1 id=&#34;生成画面预览&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成画面预览&#34;&gt;#&lt;/a&gt; 生成画面预览&lt;/h1&gt;
+&lt;p&gt;我尝试用 Sora 2 生成了一些现实风格的视频以及模仿了一些动漫预告 PV 来做了测试。对于一些知名动画来说，不需要很明显的提示词就能准确生成出对应的角色。例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;模仿动漫 游戏人生 生成一个它的第二季预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览一&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820168906&amp;p=5&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34;  scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;预览二&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820169367&amp;p=6&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;预览三&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820170451&amp;p=7&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;生成一个有关fate stay night saber线动漫预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览一&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820167477&amp;p=2&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;预览二&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820298615&amp;p=3&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;模仿动漫 ぼっち・ざ・ろっく！生成一个它的第二季预告pv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820167721&amp;p=4&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;通过一些详细描述场景的自然语言提示词，也可以做到生成以下场景：&lt;/p&gt;
+&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;生成一段模仿fate动漫画风的动漫，配音为日语 出场角色为saber, 以下为分镜： （背景为夜晚正在下雨的城市，镜头从saber坚定的双眼开始拉远到正好能看到她上半身的距离） saber用双手举起湖中剑（saber持剑的姿势应该是剑刃朝上），释放出一阵蓝色风场。随后湖中剑的剑刃爆发出金光。最后saber大喊：Excalibur！&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;details&gt;&lt;summary&gt;预览&lt;/summary&gt;&lt;div&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 60%; margin-bottom: 15px;&#34;&gt;
+    &lt;iframe src=&#34;//www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&amp;aid=115310963200042&amp;bvid=BV1eyH5zNEjR&amp;cid=32820102250&amp;p=1&amp;as_wide=1&amp;danmaku=0&amp;hasMuteButton=1&#34; muted=&#34;0&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width:100%; height:100%; left: 0; top: 0; border-radius: .75rem;&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;但比较可惜的是，尽管 Sora 2 对 Fate 角色和画风有足够多的数据训练（甚至还可以让它生成出老 Fate 的画风），但就不知道为什么像咖喱棒这种武器却无法精确地生成出来。我试过了用 “湖中剑”“石中剑” 以及 “Excalibur” 都无法精确生成。看起来 Sora 的动漫训练数据更注重与角色的声音和画风，而不是物件。&lt;/p&gt;
+&lt;p&gt;我还尝试了只输入一段简单的提示词来生成一些比较新的动漫，但效果都不怎么好。例如《别当欧尼酱了！》，真寻和动漫的画风以及角色的声音都能完美复现，但其他角色基本上就是剧中角色大融合。应该需要用户输入更详细的角色描述来生成。最新的动漫就完全不在训练数据当中了（这是当然的！），网络上那些通过 Sora2 生成的新番画面大多数都导入了图片进行了图生视频，完全依靠提示词应该是不行的，并且角色的声音也对不上。&lt;/p&gt;
+&lt;p&gt;我还尝试用 Sora2 生成过三次元视频，例如：&lt;/p&gt;
+&lt;figure class=&#34;highlight markup&#34;&gt;&lt;figcaption data-lang=&#34;markup&#34;&gt;&lt;span&gt;prompts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;一个中国bilibili的动漫区美女up主拍摄了介绍萌趣MOEQY的视频。她着重讲解了萌趣作为一个MqyGalaxy的个人站点，可以浏览有趣的博客文章和一些个人项目。她在讲解的途中顺带展示了这张网站截图（上传的图片）。她说的话都有对应正确的字幕，右上角有她账号的bilibili水印。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;实际效果就不发了，怕容易引起误导。但 Sora 2 的亮点确能完美体现在这里：无论时虚拟角色的体态、言语，甚至视频字幕（虽然有时候会瞎填）和 b 站 up 主水印都能完全生成出来，这个效果确实太强了。感兴趣的话可以复制这个提示词外加一张小站的截图到 Sora2 看看效果。&lt;/p&gt;
+&lt;h1 id=&#34;狂欢过后便是索然无味&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#狂欢过后便是索然无味&#34;&gt;#&lt;/a&gt; 狂欢过后，便是索然无味&lt;/h1&gt;
+&lt;p&gt;在我高强度地玩了一个下午的 Sora 2 后，我不得不说：相较于 Wan2.2 等一些本地部署要求极高的模型来说，Sora 2 更像是抖音一样的社交媒体，用户只需要在手机上打开 Sora APP 输入提示词就能让自己的想法变成画面，然后就能上传到 Sora 应用自带的社交平台上供其他人观赏。对于我来说，相较于大多数人在创作的角度担心使用 Sora 2 会不会造成一些道德隐患问题，更让我感到的是这样毫无付出的创意实现过程仅仅只是昙花一现，新鲜感一过便再也没有去特意打开过 Sora 2 了。但又对于自己图一乐的角度来说，Wan2.2 这种本地部署且没有限制的模型才更能让人玩出花来。更何况随着开源模型的不断进化，尽管可能存在数据训练上的不足，但实际效果和社区的创意发展肯定是会比这些闭源模型更加丰富。&lt;/p&gt;
+&lt;p&gt;AI 生成式工具，最终也只能仅仅作为玩具以及创作工具存在。它并不能成为创作本身，因为创作最重要的还是人在其中的互动和付出。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://blog.moeqy.com/tweets/20250724/post-1/</guid>
             <title>发现了一部很有趣的番剧《与游戏中心的少女异文化交流的故事》</title>
             <link>https://blog.moeqy.com/tweets/20250724/post-1/</link>
             <category term="推文" scheme="https://blog.moeqy.com/categories/tweets/" />
             <category term="ACG" scheme="https://blog.moeqy.com/tags/ACG/" />
-            <category term="推文" scheme="https://blog.moeqy.com/tags/%E6%8E%A8%E6%96%87/" />
             <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
             <category term="番剧杂谈" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7%E6%9D%82%E8%B0%88/" />
+            <category term="推文" scheme="https://blog.moeqy.com/tags/%E6%8E%A8%E6%96%87/" />
             <pubDate>Thu, 24 Jul 2025 12:55:00 +0800</pubDate>
             <description><![CDATA[ 
 &lt;div class=&#34;moegn&#34;&gt;
@@ -472,9 +481,9 @@
             <title>小吐槽以下我年轻时写的抽象口号</title>
             <link>https://blog.moeqy.com/life/20250311/post-1/</link>
             <category term="生活杂谈" scheme="https://blog.moeqy.com/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%B0%88/" />
+            <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
             <category term="生活杂谈" scheme="https://blog.moeqy.com/tags/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%B0%88/" />
             <category term="白箱" scheme="https://blog.moeqy.com/tags/%E7%99%BD%E7%AE%B1/" />
-            <category term="番剧" scheme="https://blog.moeqy.com/tags/%E7%95%AA%E5%89%A7/" />
             <category term="萌趣MOEQY" scheme="https://blog.moeqy.com/tags/%E8%90%8C%E8%B6%A3MOEQY/" />
             <pubDate>Tue, 11 Mar 2025 14:12:48 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;最近被学业肘击之余回想起来自己鸽了快一年的博客，于是回来再看了一下自己的博客和网站。&lt;br /&gt;
