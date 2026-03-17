@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 REWIND | blog.moeqy.com</title>
+    
+    <!-- === 核心样式库 (Tailwind CSS) === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- === 外部图标库引入地址 (Phosphor Icons) === -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- === 外部字体引入地址 (Google Fonts) === -->
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=M+PLUS+Rounded+1c:wght@400;500;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* === 全局字体配置集中地 === */
+            --w-font-main: 'M PLUS Rounded 1c', sans-serif; 
+            --w-font-title: 'ZCOOL KuaiLe', cursive;        
+
+            /* --- 配色 (Watanare Pop) --- */
+            --w-pink: #FF8FAB;
+            --w-blue: #8BE0F3;
+            --w-yellow: #FDE047;
+            --w-text: #334155;
+            --w-border: #1e293b;
+            --w-bg-color: #FAFAFA;
+        }
+
+        body {
+            font-family: var(--w-font-main);
+            color: var(--w-text);
+            margin: 0;
+            overflow-x: hidden;
+            background-color: transparent;
+        }
+
+        .font-title { font-family: var(--w-font-title); }
+
+        /* --- 全局自定义滚动条 --- */
+        ::-webkit-scrollbar {
+            width: 14px;
+            height: 14px;
+        }
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+            margin: 24px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            border: 4px solid transparent; 
+            background-clip: content-box; 
+            background-color: var(--w-pink);
+            background-image: repeating-linear-gradient(
+                45deg,
+                var(--w-pink),
+                var(--w-pink) 8px,
+                #FF5D8F 8px,
+                #FF5D8F 16px
+            );
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-image: repeating-linear-gradient(
+                45deg,
+                #FF5D8F,
+                #FF5D8F 8px,
+                #E83E8C 8px,
+                #E83E8C 16px
+            );
+        }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--w-pink) transparent;
+        }
+
+        /* --- 弹窗内部文本区域滚动条 --- */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            margin: 0;
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            border: 2px solid transparent;
+            background-clip: content-box;
+            background-image: none;
+            background-color: #cbd5e1;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background-color: var(--w-pink);
+        }
+
+        /* --- 0. 全局动态背景 --- */
+        #global-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, #fff 0%, #f0f9ff 100%);
+            overflow: hidden;
+        }
+        .geo-shape {
+            position: absolute;
+            opacity: 0;
+            animation: floatUp linear infinite;
+        }
+        .geo-shape:nth-child(1) { top: 100%; left: 10%; width: 50px; height: 50px; background: var(--w-pink); animation-duration: 15s; border-radius: 50%; }
+        .geo-shape:nth-child(2) { top: 100%; left: 25%; width: 30px; height: 30px; background: var(--w-yellow); animation-duration: 12s; transform: rotate(45deg); animation-delay: 2s; }
+        .geo-shape:nth-child(3) { top: 100%; left: 50%; width: 60px; height: 60px; background: var(--w-blue); animation-duration: 18s; border-radius: 12px; animation-delay: 5s; }
+        .geo-shape:nth-child(4) { top: 100%; left: 75%; width: 40px; height: 40px; background: var(--w-pink); animation-duration: 22s; clip-path: polygon(50% 0%, 0% 100%, 100% 100%); animation-delay: 1s; }
+        .geo-shape:nth-child(5) { top: 100%; left: 90%; width: 20px; height: 20px; background: var(--w-border); animation-duration: 14s; border-radius: 50%; animation-delay: 8s; opacity: 0.2; }
+        
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* --- 边缘滚动字幕装饰 --- */
+        .side-marquee {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            pointer-events: none;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+            z-index: 0; /* 位于 global-bg 的 -1 层中，自动在所有主要内容下方 */
+            display: flex;
+        }
+        
+        .side-left { 
+            left: 80px; /* 左边紧靠 80px 的侧边栏 */
+            justify-content: flex-start; 
+        }
+        
+        .side-right { 
+            right: 0; /* 右边紧靠屏幕边缘 */
+            justify-content: flex-end; 
+        }
+        
+        .marquee-track {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-family: var(--w-font-main); /* 替换为更粗壮的正文字体 */
+            font-weight: 900; /* 使用最高字重变粗 */
+            font-size: 140px; /* 增大字号让粗体更有张力 */
+            line-height: 1;
+            white-space: nowrap;
+            opacity: 0.04; /* 极淡化，完美融入底层背景 */
+            height: max-content;
+        }
+        .marquee-track span {
+            display: inline-block;
+            padding-bottom: 4rem; /* 文字首尾的间距 */
+        }
+        
+        .track-left {
+            color: var(--w-pink);
+            animation: scrollVertUp 120s linear infinite; /* 速度大幅减慢 */
+        }
+        .track-right {
+            color: var(--w-blue);
+            animation: scrollVertDown 120s linear infinite; /* 速度大幅减慢 */
+        }
+
+        @keyframes scrollVertDown {
+            from { transform: translateY(-50%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes scrollVertUp {
+            from { transform: rotate(180deg) translateY(0); }
+            to { transform: rotate(180deg) translateY(50%); }
+        }
+
+        /* 响应式处理：随着屏幕缩小，逐渐减小字号，保持在底层 */
+        @media (max-width: 1200px) {
+            .side-marquee { width: 80px; }
+            .marquee-track { font-size: 90px; }
+        }
+        @media (max-width: 768px) {
+            .side-left { left: 0; } /* 移动端由于布局变化，紧靠最左侧 */
+            .side-marquee { width: 50px; }
+            .marquee-track { font-size: 60px; opacity: 0.03; }
+        }
+
+        /* --- 1. 登录开场 --- */
+        #login-curtain {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            display: flex; align-items: center; justify-content: center;
+            transition: transform 0.8s cubic-bezier(0.8, 0, 0.2, 1);
+        }
+        .login-box {
+            background: #fff; border: 4px solid var(--w-border);
+            box-shadow: 12px 12px 0 var(--w-pink);
+            border-radius: 30px; padding: 3rem; text-align: center;
+            max-width: 450px; width: 90%;
+        }
+        .login-avatar-upload {
+            width: 120px; height: 120px; border-radius: 50%;
+            border: 4px dashed var(--w-border);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; overflow: hidden; margin: 0 auto 1.5rem;
+            transition: all 0.3s; background: #f8fafc;
+        }
+        .login-avatar-upload:hover { border-color: var(--w-pink); transform: scale(1.05); }
+
+        /* --- 2. 侧边栏 --- */
+        #sidebar {
+            position: fixed; left: 0; top: 0; height: 100%; width: 80px;
+            background: rgba(255,255,255,0.95); border-right: 3px solid var(--w-border);
+            z-index: 100; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden; display: flex; flex-direction: column; padding-top: 2rem;
+            box-shadow: 5px 0 15px rgba(0,0,0,0.05);
+        }
+        #sidebar:hover { width: 240px; }
+
+        .nav-avatar-container {
+            position: relative; width: 100%; height: 80px;
+            display: flex; align-items: center; padding-left: 13px;
+            margin-bottom: 2rem; cursor: pointer;
+        }
+        .side-avatar {
+            width: 50px; height: 50px; border-radius: 50%;
+            border: 3px solid var(--w-pink); object-fit: cover; background: #fff;
+            transition: transform 0.2s;
+        }
+        .side-avatar:hover { transform: scale(1.1); }
+        
+        .avatar-hint {
+            position: absolute; left: 70px; top: 15px;
+            background: var(--w-yellow); color: var(--w-border);
+            font-size: 12px; font-weight: 900; padding: 6px 10px;
+            border-radius: 12px; border: 2px solid var(--w-border);
+            white-space: nowrap; opacity: 1; 
+            pointer-events: none; transition: transform 0.2s;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            height: 60px; display: flex; align-items: center; padding-left: 26px;
+            cursor: pointer; color: var(--w-text); font-weight: 900;
+            transition: all 0.2s; white-space: nowrap; font-size: 1.1rem;
+        }
+        .nav-item:hover, .nav-item.active {
+            background: var(--w-pink); color: #fff;
+        }
+        .nav-item i { font-size: 1.8rem; min-width: 30px; text-align: center; }
+        .nav-text { margin-left: 15px; opacity: 0; transition: opacity 0.2s; }
+        #sidebar:hover .nav-text { opacity: 1; }
+
+        /* --- 3. 页面布局 --- */
+        main { margin-left: 80px; }
+        section {
+            min-height: 100vh; width: 100%; padding: 4rem 2rem;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+
+        /* 核心标题样式重构 */
+        .title-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3.5rem;
+            z-index: 10;
+            flex-wrap: wrap;
+        }
+        
+        .title-main {
+            font-family: var(--w-font-main);
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #D6538E;
+            background-color: #D6538E;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8.5c-2-2.5-5.5-2.5-7.5-.5s-2 5.5 0 7.5l7.5 7.5 7.5-7.5c2-2 2-5.5 0-7.5s-5.5-2-7.5.5z' fill='%23b84273' opacity='0.5'/%3E%3C/svg%3E");
+            background-size: 24px 24px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+            margin: 0;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .title-sub {
+            font-family: var(--w-font-main);
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #777;
+            letter-spacing: 0.1em;
+            transform: translateY(-5px); 
+        }
+
+        .title-deco-1 { position: absolute; left: -45px; top: -5px; color: #7DB9C8; font-size: 1.8rem; transform: rotate(-20deg); }
+        .title-deco-2 { position: absolute; left: -20px; top: 35px; color: #BFA58A; font-size: 1rem; transform: rotate(15deg); }
+        .title-deco-3 { position: absolute; right: -35px; top: 5px; color: #F0A8B8; font-size: 1.5rem; transform: rotate(45deg); }
+        .title-deco-4 { position: absolute; right: -15px; top: -15px; color: #FDE047; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            .title-main { font-size: 2.2rem; }
+            .title-wrapper { flex-direction: column; align-items: center; gap: 0.25rem; }
+            .title-sub { transform: translateY(0); }
+            .title-deco-1 { left: -15px; font-size: 1.2rem; top: -10px;}
+            .title-deco-3 { right: -15px; font-size: 1.2rem; top: -5px;}
+        }
+
+        /* --- HOME --- */
+        .home-container {
+            display: flex; align-items: center; justify-content: center; gap: 4rem;
+            width: 100%; max-width: 1200px;
+        }
+        .home-text { text-align: right; }
+        
+        /* --- TIMELINE (Horizontal Scrollable) --- */
+        .timeline-container {
+            width: 100%; max-width: 1000px; margin-top: 2rem;
+        }
+        .site-msg-box {
+            background: #fff; border: 3px solid var(--w-border);
+            border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem;
+            box-shadow: 8px 8px 0 var(--w-yellow); position: relative;
+        }
+        .progress-bar {
+            height: 20px; background: #eee; border: 2px solid var(--w-border);
+            border-radius: 10px; overflow: hidden; margin-top: 1rem;
+        }
+        .progress-fill {
+            height: 100%; background: repeating-linear-gradient(45deg, var(--w-pink), var(--w-pink) 10px, #FF5D8F 10px, #FF5D8F 20px);
+            width: 65%;
+        }
+
+        /* 滚动容器包装 */
+        .timeline-scroll-area {
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 20px; /* 给阴影和滚动条留空间 */
+            scroll-behavior: smooth;
+            cursor: grab; /* 添加拖动手势光标 */
+            scrollbar-width: none; /* 隐藏原生滚动条 (Firefox) */
+            -webkit-user-select: none; /* 防止拖动时选中文本 (Safari) */
+            user-select: none; /* 防止拖动时选中文本 */
+        }
+
+        .timeline-scroll-area::-webkit-scrollbar {
+            display: none; /* 隐藏原生滚动条 (Chrome/Safari) */
+        }
+
+        .timeline-scroll-area:active {
+            cursor: grabbing; /* 拖动时的抓取手势 */
+        }
+
+        .h-timeline {
+            display: flex;
+            gap: 2rem; /* 节点间距 */
+            position: relative;
+            padding-top: 40px;
+            width: max-content; /* 让内容撑开以实现滚动 */
+            min-width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /* 贯穿时间线的轴线 */
+        .h-timeline::before {
+            content: ''; 
+            position: absolute; 
+            top: 10px; 
+            left: 0; 
+            right: 0;
+            height: 6px; 
+            background: var(--w-border); 
+            border-radius: 3px; 
+            z-index: 0;
+        }
+
+        .h-time-item {
+            position: relative; 
+            width: 260px; /* 固定卡片宽度，防止挤压 */
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .h-time-dot {
+            width: 24px; height: 24px; background: var(--w-yellow);
+            border: 4px solid var(--w-border); border-radius: 50%;
+            position: absolute; top: -38px; left: 50%; transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .h-time-card {
+            background: #fff; border: 3px solid var(--w-border);
+            border-radius: 16px; padding: 1.5rem 1rem;
+            box-shadow: 4px 4px 0 var(--w-blue);
+            transition: transform 0.2s;
+            height: 100%; /* 让卡片高度一致 */
+        }
+        .h-time-card:hover { transform: translateY(-5px); }
+
+        /* --- FAVORITES --- */
+        .cat-btn {
+            background: #fff; border: 3px solid var(--w-border);
+            padding: 0.5rem 2rem; border-radius: 99px; font-weight: 900; font-size: 1.2rem;
+            transition: all 0.2s; box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+        }
+        .cat-btn:hover { transform: translateY(-2px); }
+        .cat-btn.active {
+            background: var(--w-blue); color: #fff; box-shadow: 4px 4px 0 var(--w-border);
+            transform: translate(-2px, -2px);
+        }
+
+        .fav-card-vertical {
+            aspect-ratio: 2/3; background: #fff; border: 4px solid #fff;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden; transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .fav-card-vertical:hover { transform: translateY(-10px); z-index: 10; }
+        .fav-rank {
+            position: absolute; top: 0; left: 0; width: 40px; height: 40px;
+            background: var(--w-yellow); border-right: 3px solid var(--w-border); border-bottom: 3px solid var(--w-border);
+            font-weight: 900; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;
+            z-index: 5; border-bottom-right-radius: 12px;
+        }
+        .fav-tag {
+            position: absolute; top: 10px; right: 10px;
+            background: #fff; border: 2px solid var(--w-text); padding: 2px 8px;
+            font-weight: 800; font-size: 0.8rem; border-radius: 6px; transform: rotate(5deg);
+            z-index: 5; box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        .fav-img { width: 100%; height: 100%; object-fit: cover; }
+        .fav-title {
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white; padding: 30px 10px 10px; font-weight: bold; font-size: 1.1rem;
+        }
+
+        /* --- FRIENDS (Refined Showcase) --- */
+        #friends { 
+            position: relative; 
+            overflow: hidden; 
+            isolation: isolate; 
+        }
+        
+        .friends-section { 
+            width: 100%; 
+            max-width: 1200px; 
+            position: relative; 
+            z-index: 10;
+        }
+
+        /* 边缘淡出遮罩 */
+        .marquee-mask {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+            mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+        }
+        
+        /* 背景循环滚动照片墙 */
+        .bg-marquee-container {
+            position: absolute; 
+            top: 50%; left: 50%; 
+            width: 300vw; height: 300vh; 
+            transform: translate(-50%, -50%) rotate(-10deg); 
+            z-index: -1; 
+            display: flex; flex-direction: column; 
+            justify-content: center; 
+            gap: 60px;
+            opacity: 0.15; 
+            pointer-events: none;
+        }
+        .bg-marquee-row {
+            display: flex; gap: 40px; width: 100%;
+            justify-content: flex-start;
+            animation: bgScroll 120s linear infinite;
+        }
+        .bg-marquee-row:nth-child(even) { animation-direction: reverse; }
+        .bg-marquee-img {
+            width: 120px; height: 120px; border-radius: 20px; object-fit: cover;
+            filter: grayscale(100%); opacity: 0.8; flex-shrink: 0;
+        }
+        @keyframes bgScroll { 
+            0% { transform: translateX(0); } 
+            100% { transform: translateX(-25%); }
+        }
+
+        /* 针对大于 1920px 的超宽屏/大屏，等比例放大照片墙 */
+        @media (min-width: 1921px) {
+            .bg-marquee-container {
+                gap: 3.125vw;
+                width: 400vw; 
+                height: 400vh;
+            }
+            .bg-marquee-row {
+                gap: 2.083vw;
+            }
+            .bg-marquee-img {
+                width: 6.25vw;
+                height: 6.25vw;
+                border-radius: 1.04vw;
+            }
+        }
+
+        /* Showcase Layout */
+        .char-showcase {
+            background: rgba(255,255,255,0.9);
+            border-radius: 40px;
+            border: 4px solid #fff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 1100px;
+            display: flex; flex-direction: column; gap: 2rem;
+            position: relative;
+        }
+
+        /* AutoPlay Progress Bar (Bottom Position) */
+        .autoplay-bar {
+            width: 100%; height: 6px;
+            background: rgba(0,0,0,0.05);
+            margin-top: 20px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .autoplay-fill {
+            height: 100%; width: 0; background: var(--w-pink);
+        }
+        @keyframes progressFill {
+            0% { width: 0; } 100% { width: 100%; }
+        }
+
+        .char-main {
+            display: flex; align-items: center; gap: 4rem;
+        }
+        @media (max-width: 900px) {
+            .char-main { flex-direction: column-reverse; text-align: center; gap: 2rem; }
+            .char-role-badge, .char-pills { align-self: center; justify-content: center; }
+            .char-link-btn { align-self: center; }
+        }
+
+        .char-info-left {
+            flex: 1;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        
+        .char-name-lg {
+            font-size: 3rem; font-weight: 900; color: var(--w-border);
+            margin-bottom: 0.5rem; font-family: 'ZCOOL KuaiLe', cursive;
+            line-height: 1.2;
+            display: flex; align-items: center; gap: 10px;
+        }
+        /* New User Tag in Title */
+        .char-tag-new {
+            font-size: 1rem; color: #fff; background: #ff4757;
+            padding: 2px 8px; border-radius: 4px; vertical-align: middle;
+            animation: pulse 1s infinite; font-family: sans-serif;
+        }
+        @keyframes pulse { 0%{opacity:1} 50%{opacity:0.7} 100%{opacity:1} }
+
+        .char-role-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--w-pink); color: #fff;
+            padding: 6px 16px; border-radius: 99px; font-weight: bold; font-size: 0.9rem;
+            margin-bottom: 1.5rem; align-self: flex-start;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+        }
+        
+        .char-desc-box {
+            background: #fff; border: 2px solid #eee; border-radius: 16px;
+            padding: 1.5rem; margin-bottom: 2rem;
+            font-size: 1.1rem; line-height: 1.8; color: #555;
+            position: relative;
+        }
+        .char-desc-box::before {
+            content: '“'; position: absolute; top: -20px; left: 10px;
+            font-size: 4rem; color: var(--w-blue); opacity: 0.3; font-family: serif;
+        }
+
+        .char-data-grid {
+            display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem;
+        }
+        .char-data-item {
+            background: var(--w-border); color: #fff; padding: 6px 12px;
+            font-size: 0.8rem; font-weight: bold; border-radius: 6px;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .char-data-label {
+            background: #fff; color: var(--w-border); padding: 2px 6px; border-radius: 4px; font-size: 0.7rem;
+        }
+
+        .char-link-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--w-blue); color: #fff; font-weight: 900;
+            padding: 12px 32px; border-radius: 99px; width: fit-content;
+            transition: all 0.2s; box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+            font-size: 1.1rem; text-decoration: none;
+        }
+        .char-link-btn:hover { transform: translateY(-3px); box-shadow: 4px 4px 0 var(--w-border); }
+
+        /* Polaroid Card (Right) */
+        .char-card-right {
+            flex-shrink: 0; width: 340px;
+            background: #fff; padding: 15px 15px 50px 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform: rotate(2deg); transition: transform 0.3s;
+            position: relative; border: 1px solid #eee;
+        }
+        .char-card-right:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
+        .char-card-right::after {
+            content: ''; position: absolute; top: -15px; left: 50%;
+            width: 80px; height: 35px; background: rgba(255,255,255,0.4);
+            border: 1px solid #ddd; transform: translateX(-50%) rotate(-3deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .cc-header {
+            background: var(--w-pink); color: #fff; text-align: center;
+            font-weight: 900; text-transform: uppercase; font-size: 0.85rem;
+            padding: 6px 0; border-radius: 6px 6px 0 0; margin-bottom: 10px; letter-spacing: 1px;
+        }
+        .cc-img-box {
+            width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 6px;
+            background: #f8f8f8; position: relative;
+        }
+        .cc-img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .cc-tags {
+            margin-top: 15px; font-size: 0.8rem; font-weight: bold; color: #999; line-height: 1.6;
+        }
+        .cc-plus-btn {
+            position: absolute; bottom: 15px; right: 15px;
+            width: 40px; height: 40px; background: var(--w-border); color: #fff;
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; cursor: pointer; transition: transform 0.2s;
+        }
+        .cc-plus-btn:hover { transform: rotate(90deg); }
+        .cc-watermark {
+            position: absolute; bottom: 12px; left: 15px;
+            font-family: 'ZCOOL KuaiLe'; color: #eee; font-size: 1.8rem;
+            transform: rotate(-5deg); pointer-events: none;
+        }
+
+        /* Bottom Menu (Scrollable) */
+        .char-nav-wrapper {
+            display: flex; align-items: center; gap: 1rem;
+            margin-top: 1rem; padding-top: 2rem;
+            border-top: 2px dashed #eee;
+        }
+        .nav-arrow {
+            flex-shrink: 0; width: 44px; height: 44px; 
+            background: var(--w-blue); color: #fff; border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; cursor: pointer; transition: transform 0.2s;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        .nav-arrow:hover { transform: scale(1.1); }
+
+        .nav-avatars-scroll {
+            flex: 1; display: flex; gap: 1rem; overflow-x: auto;
+            padding: 10px 5px; scroll-behavior: smooth;
+            scrollbar-width: none; 
+        }
+        .nav-avatars-scroll::-webkit-scrollbar { display: none; }
+
+        .nav-avatar-wrapper {
+            position: relative; flex-shrink: 0; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .nav-avatar-item {
+            width: 60px; height: 60px; border-radius: 50%;
+            border: 3px solid #fff; 
+            object-fit: cover; opacity: 0.5;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); background: #eee;
+        }
+        .nav-avatar-wrapper:hover .nav-avatar-item { transform: translateY(-5px); opacity: 0.8; }
+        .nav-avatar-wrapper.active .nav-avatar-item {
+            border-color: var(--w-pink); opacity: 1; transform: scale(1.15) translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        
+        /* New User Badge on Nav */
+        .nav-badge-new {
+            position: absolute; top: 0; right: 0;
+            width: 20px; height: 20px; background: #ff4757; color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 12px; font-weight: bold; border: 2px solid white;
+            animation: bounce 2s infinite; z-index: 2;
+        }
+
+        /* --- FOOTER (Watanare Style) --- */
+        .w-footer-container {
+            position: relative;
+            width: 100%;
+            margin-top: 5rem;
+            z-index: 10;
+        }
+
+        .w-footer {
+            background: linear-gradient(to right, #FFF0F5 0%, #FEF9C3 50%, #E0F7FA 100%);
+            position: relative;
+            padding: 8rem 2rem 4rem 2rem;
+            overflow: hidden;
+            
+            /* 完美的透明凹陷遮罩，掏空顶部区域露出底层全局背景，Y点设为23以预留出上面6px白线的间隙 */
+            -webkit-mask-image: 
+                url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 1440 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,23 Q720,103 1440,23 L1440,120 L0,120 Z' fill='black'/%3E%3C/svg%3E"), 
+                linear-gradient(black, black);
+            -webkit-mask-position: top center, center 120px;
+            -webkit-mask-size: 100% 120px, 100% calc(100% - 120px);
+            -webkit-mask-repeat: no-repeat;
+            mask-image: 
+                url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 1440 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,23 Q720,103 1440,23 L1440,120 L0,120 Z' fill='black'/%3E%3C/svg%3E"), 
+                linear-gradient(black, black);
+            mask-position: top center, center 120px;
+            mask-size: 100% 120px, 100% calc(100% - 120px);
+            mask-repeat: no-repeat;
+        }
+
+        .w-footer-pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.7;
+            /* 点和心形交叉循环的波普纹理 */
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 10 7.5 C 9 6.5, 7.5 6.5, 7.5 8 C 7.5 9.5, 10 11.5, 10 11.5 C 10 11.5, 12.5 9.5, 12.5 8 C 12.5 6.5, 11 6.5, 10 7.5 Z' fill='%23ffffff'/%3E%3Cpath d='M 30 27.5 C 29 26.5, 27.5 26.5, 27.5 28 C 27.5 29.5, 30 31.5, 30 31.5 C 30 31.5, 32.5 29.5, 32.5 28 C 32.5 26.5, 31 26.5, 30 27.5 Z' fill='%23ffffff'/%3E%3Ccircle cx='30' cy='10' r='2' fill='%23ffffff'/%3E%3Ccircle cx='10' cy='30' r='2' fill='%23ffffff'/%3E%3C/svg%3E");
+            background-size: 40px 40px;
+            z-index: 0;
+        }
+
+        .w-footer-link {
+            color: #6B5A74;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-weight: 800;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .w-footer-link:hover { color: var(--w-pink); }
+        .w-footer-text { color: #6B5A74; }
+        .w-deco { position: absolute; z-index: 1; pointer-events: none; }
+
+        /* --- FLOATING MASCOT (Left Bottom) --- */
+        #floating-mascot {
+            position: fixed; left: 100px; bottom: 20px; z-index: 90;
+            display: flex; flex-direction: column; align-items: flex-start;
+            transition: bottom 0.1s ease-out; /* For footer collision */
+        }
+        .mascot-bubble {
+            background: #fff; border: 3px solid var(--w-border);
+            padding: 15px; border-radius: 20px; border-bottom-left-radius: 0;
+            margin-bottom: 10px; font-weight: 900; box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+            max-width: 200px; 
+            /* Added opacity transitions for JS control */
+            opacity: 1; transition: opacity 0.3s;
+        }
+        .mascot-bubble.popIn { animation: popIn 0.5s forwards; }
+
+        .mascot-img {
+            width: 180px; height: auto; cursor: pointer;
+            filter: drop-shadow(4px 4px 0 rgba(255,255,255,0.5));
+            transition: transform 0.2s;
+        }
+        .mascot-img:hover { transform: scale(1.05); }
+        
+        .back-to-top {
+            position: absolute; right: -50px; bottom: 20px;
+            width: 40px; height: 40px; background: var(--w-yellow);
+            border: 3px solid var(--w-border); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-size: 1.5rem; box-shadow: 2px 2px 0 var(--w-border);
+        }
+        .back-to-top:hover { transform: translateY(-3px); }
+
+        /* --- MODAL (With CSS Fade In/Out Transitions) --- */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px); z-index: 999; 
+            display: flex; 
+            align-items: center; justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-overlay.open { opacity: 1; visibility: visible; }
+
+        .modal-box {
+            transform: scale(0.95);
+            opacity: 0;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+        }
+        .modal-overlay.open .modal-box { transform: scale(1); opacity: 1; }
+
+        .card-preview-img { border: 8px solid #fff; box-shadow: 0 20px 50px rgba(0,0,0,0.3); max-height: 80vh; object-fit: contain; }
+
+        @keyframes popIn { from{transform:scale(0.8);opacity:0} to{transform:scale(1);opacity:1} }
+        @keyframes scrollLoop { 0% { transform: translateY(-4px); opacity: 0; } 30% { opacity: 1; } 70% { opacity: 1; } 100% { transform: translateY(4px); opacity: 0; } }
+        .scroll-arrow-anim { animation: scrollLoop 1.5s infinite; }
+
+        /* Detail Modal Review Card Styling */
+        .review-watermark {
+            position: absolute; top: 20px; right: 20px;
+            font-size: 6rem; font-family: var(--w-font-title);
+            color: var(--w-pink); opacity: 0.08;
+            z-index: 0; pointer-events: none; user-select: none; line-height: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 0. BG -->
+    <div id="global-bg">
+        <div class="geo-shape"></div>
+        <div class="geo-shape"></div>
+        <div class="geo-shape"></div>
+        <div class="geo-shape"></div>
+        <div class="geo-shape"></div>
+        
+        <!-- 边缘滚动字幕 (Edge Marquees) -->
+        <div class="side-marquee side-left">
+            <div class="marquee-track track-left">
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+            </div>
+        </div>
+        <div class="side-marquee side-right">
+            <div class="marquee-track track-right">
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+                <span>2025 REWIND × MOEQY BLOG</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. LOGIN -->
+    <div id="login-curtain">
+        <div class="login-box">
+            <h1 class="font-title text-6xl text-[var(--w-border)] mb-4">2025 REWIND</h1>
+            <label class="login-avatar-upload" title="Upload Avatar">
+                <img id="login-avatar-preview" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Guest">
+                <input type="file" class="hidden" accept="image/*" onchange="handleLoginAvatar(this)">
+            </label>
+            <input type="text" id="username-in" placeholder="Enter Nickname" 
+                   class="w-full bg-gray-50 border-4 border-[var(--w-border)] rounded-xl px-4 py-3 text-center text-xl font-bold mb-4 outline-none focus:border-[var(--w-pink)]">
+            <button onclick="startApp()" class="w-full bg-[var(--w-yellow)] text-[var(--w-border)] font-black text-2xl py-3 rounded-xl border-4 border-[var(--w-border)] shadow-[6px_6px_0_var(--w-border)] hover:translate-y-1 hover:shadow-none transition-all">
+                START
+            </button>
+        </div>
+    </div>
+
+    <!-- 2. SIDEBAR -->
+    <nav id="sidebar">
+        <div class="nav-avatar-container" onclick="openProfile()">
+            <img id="side-avatar" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Guest" class="side-avatar">
+            <div class="avatar-hint">点击制作贺卡</div>
+        </div>
+        <div class="nav-item active" onclick="scrollToSec('home')"><i class="ph-bold ph-house"></i><span class="nav-text">首页</span></div>
+        <div class="nav-item" onclick="scrollToSec('summary')"><i class="ph-bold ph-notebook"></i><span class="nav-text">年终总结</span></div>
+        <div class="nav-item" onclick="scrollToSec('favorites')"><i class="ph-bold ph-heart"></i><span class="nav-text">年度最爱</span></div>
+        <div class="nav-item" onclick="scrollToSec('friends')"><i class="ph-bold ph-users"></i><span class="nav-text">伙伴们</span></div>
+        <div class="nav-item" onclick="scrollToSec('footer')"><i class="ph-bold ph-arrow-down"></i><span class="nav-text">底部</span></div>
+    </nav>
+
+    <!-- 3. MAIN -->
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="relative">
+            <div class="home-container">
+                <div class="w-1/2 flex justify-center">
+                    <img src="https://placehold.co/400x600/FF8FAB/fff?text=Mascot+Art" class="w-full max-w-md drop-shadow-2xl transform -rotate-3 border-4 border-white rounded-3xl">
+                </div>
+                <div class="w-1/2 home-text">
+                    <div class="inline-block bg-[var(--w-yellow)] border-2 border-[var(--w-border)] px-6 py-2 rounded-full font-black text-xl mb-6 shadow-[4px_4px_0_var(--w-border)]">
+                        # Welcome 2026
+                    </div>
+                    <h1 class="font-title text-7xl md:text-8xl text-[var(--w-pink)] mb-2" style="-webkit-text-stroke: 3px var(--w-border);">
+                        新年快乐!
+                    </h1>
+                    <h2 class="text-5xl font-black text-[var(--w-border)] mb-8 bg-white inline-block px-4 transform rotate-2 border-2 border-[var(--w-border)]">
+                        <span id="display-name">Guest</span>
+                    </h2>
+                    <p class="text-xl font-bold text-gray-500">
+                        在这里记录过去，展望未来。<br>下滑开启你的年度回顾之旅！
+                    </p>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-8 flex flex-col items-center cursor-pointer text-[var(--w-text)]" onclick="scrollToSec('summary')">
+                <span class="text-sm font-black tracking-widest mb-1 opacity-60">SCROLL</span>
+                <div class="w-10 h-10 rounded-full border-2 border-[var(--w-text)] flex items-center justify-center bg-white shadow-sm">
+                    <i class="ph-bold ph-arrow-down text-xl scroll-arrow-anim"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUMMARY SECTION -->
+        <section id="summary">
+            
+            <div class="title-wrapper">
+                <i class="ph-fill ph-heart title-deco-1"></i>
+                <i class="ph-fill ph-diamond title-deco-2"></i>
+                <i class="ph-fill ph-triangle title-deco-3"></i>
+                <i class="ph-fill ph-circle title-deco-4"></i>
+                <h2 class="title-main">2025 SUMMARY</h2>
+                <span class="title-sub">年终总结</span>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="site-msg-box">
+                    <h3 class="font-title text-2xl mb-2 text-[var(--w-pink)]">站长寄语</h3>
+                    <p class="font-bold text-lg mb-4">“今年是建立博客的第1年，感谢大家的陪伴！下一个十年之约，我们不见不散。”</p>
+                    <div class="flex justify-between text-sm font-black mb-1">
+                        <span>10-Year Promise</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill"></div></div>
+                </div>
+
+                <div class="flex justify-end w-full mb-2">
+                    <div class="text-sm font-bold text-gray-400 animate-pulse flex items-center gap-1">
+                        <i class="ph-bold ph-hand-swipe-left"></i> 按住并左右拖动查看更多
+                    </div>
+                </div>
+
+                <div class="timeline-scroll-area">
+                    <div class="h-timeline" id="timeline-container">
+                        <!-- JS Injected -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAVORITES SECTION -->
+        <section id="favorites">
+            
+            <div class="title-wrapper">
+                <i class="ph-fill ph-heart title-deco-1"></i>
+                <i class="ph-fill ph-diamond title-deco-2"></i>
+                <i class="ph-fill ph-triangle title-deco-3"></i>
+                <i class="ph-fill ph-circle title-deco-4"></i>
+                <h2 class="title-main">BEST OF 2025</h2>
+                <span class="title-sub">年度最爱</span>
+            </div>
+            
+            <div class="flex gap-4 mb-12">
+                <button onclick="renderFav('anime')" id="btn-anime" class="cat-btn active">ANIME</button>
+                <button onclick="renderFav('game')" id="btn-game" class="cat-btn">GAME</button>
+            </div>
+
+            <div id="fav-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl px-4">
+                <!-- JS Injected -->
+            </div>
+        </section>
+
+        <!-- FRIENDS SECTION -->
+        <section id="friends" class="relative overflow-hidden">
+            <!-- Background Marquee Layer -->
+            <div class="marquee-mask">
+                <div id="friends-bg-layer" class="bg-marquee-container">
+                    <!-- JS Populated -->
+                </div>
+            </div>
+
+            <div class="title-wrapper">
+                <i class="ph-fill ph-heart title-deco-1"></i>
+                <i class="ph-fill ph-diamond title-deco-2"></i>
+                <i class="ph-fill ph-triangle title-deco-3"></i>
+                <i class="ph-fill ph-circle title-deco-4"></i>
+                <h2 class="title-main">FRIENDS LINK</h2>
+                <span class="title-sub">友情链接</span>
+            </div>
+            
+            <div class="char-showcase" onmouseenter="isHovering=true; stopAutoPlay()" onmouseleave="isHovering=false; startAutoPlay()">
+                <div class="char-main" id="char-content"></div>
+                <div class="char-nav-wrapper">
+                    <div class="nav-arrow" onclick="prevFriend()"><i class="ph-bold ph-caret-left"></i></div>
+                    <div class="nav-avatars-scroll" id="char-nav-scroll"></div>
+                    <div class="nav-arrow" onclick="nextFriend()"><i class="ph-bold ph-caret-right"></i></div>
+                </div>
+                <div class="autoplay-bar"><div class="autoplay-fill" id="autoplay-fill"></div></div>
+            </div>
+        </section>
+
+        <!-- FOOTER (Watanare Style) -->
+        <div class="w-footer-container">
+            <!-- 叠加的 SVG 描边层：通过精确的 Y 轴坐标差实现完美的平行细线 -->
+            <svg class="absolute top-0 left-0 w-full h-[120px] z-20 pointer-events-none overflow-visible" preserveAspectRatio="none" viewBox="0 0 1440 120">
+                <defs>
+                    <linearGradient id="stroke-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#FDE2E4" />
+                        <stop offset="50%" stop-color="#FFF3B0" />
+                        <stop offset="100%" stop-color="#D1F2EB" />
+                    </linearGradient>
+                </defs>
+                <!-- 细线 (最外侧彩色细线，Y轴最高 = 24) -->
+                <path d="M0,24 Q720,104 1440,24" fill="none" stroke="url(#stroke-grad)" stroke-width="2" />
+                <!-- 白线间隔 (中间白色粗线，Y轴居中 = 32) -->
+                <path d="M0,32 Q720,112 1440,32" fill="none" stroke="#ffffff" stroke-width="8" />
+                <!-- 遮罩实际是从 M0,40 开始的 -->
+            </svg>
+
+            <footer id="footer" class="w-footer">
+                <!-- Pattern Background -->
+                <div class="w-footer-pattern"></div>
+
+                <!-- Geometric Decos -->
+                <i class="ph-fill ph-triangle w-deco text-6xl text-[#7DB9C8] opacity-80 top-[15%] left-[5%] transform rotate-[-15deg]"></i>
+                <i class="ph-fill ph-play w-deco text-2xl text-[#FF8FAB] opacity-80 top-[25%] left-[10%] transform rotate-[-30deg]"></i>
+                <i class="ph-fill ph-play w-deco text-4xl text-[#FDE047] opacity-80 top-[30%] left-[8%] transform rotate-[15deg]"></i>
+                
+                <i class="ph-fill ph-triangle w-deco text-5xl text-[#7DB9C8] opacity-80 bottom-[20%] right-[4%] transform rotate-[160deg]"></i>
+                <i class="ph-fill ph-play w-deco text-2xl text-[#FF8FAB] opacity-80 bottom-[28%] right-[8%] transform rotate-[45deg]"></i>
+
+                <div class="max-w-6xl mx-auto relative z-10 flex flex-col items-center">
+                    <!-- Nav Links -->
+                    <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 uppercase">
+                        <a href="#home" onclick="scrollToSec('home')" class="w-footer-link group"><span class="text-[var(--w-pink)] text-xs opacity-0 group-hover:opacity-100 transition-opacity">♥</span> HOME</a>
+                        <a href="#summary" onclick="scrollToSec('summary')" class="w-footer-link group"><span class="text-[var(--w-pink)] text-xs opacity-0 group-hover:opacity-100 transition-opacity">♥</span> SUMMARY</a>
+                        <a href="#favorites" onclick="scrollToSec('favorites')" class="w-footer-link group"><span class="text-[var(--w-pink)] text-xs opacity-0 group-hover:opacity-100 transition-opacity">♥</span> FAVORITES</a>
+                        <a href="#friends" onclick="scrollToSec('friends')" class="w-footer-link group"><span class="text-[var(--w-pink)] text-xs opacity-0 group-hover:opacity-100 transition-opacity">♥</span> FRIENDS</a>
+                        <a href="#" onclick="openProfile()" class="w-footer-link group"><span class="text-[var(--w-pink)] text-xs opacity-0 group-hover:opacity-100 transition-opacity">♥</span> CARD MAKER</a>
+                    </div>
+
+                    <!-- Dotted Divider -->
+                    <div class="w-full border-t-[2px] border-dotted border-[#cbd5e1] mb-10 opacity-70"></div>
+
+                    <!-- Bottom Bar -->
+                    <div class="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
+                        <!-- Left: Official Links & Button -->
+                        <div class="flex flex-col items-center md:items-start gap-4 w-full md:w-1/3">
+                            <div class="flex items-center gap-4 w-footer-text font-bold tracking-widest text-sm">
+                                <span class="text-xs uppercase">OFFICIAL</span>
+                                <a href="#" class="text-xl hover:text-[var(--w-pink)] transition-colors"><i class="ph-bold ph-x-logo"></i></a>
+                                <a href="#" class="text-xl hover:text-[var(--w-pink)] transition-colors"><i class="ph-bold ph-tiktok-logo"></i></a>
+                            </div>
+                            <a href="#" class="bg-white text-[#6B5A74] px-6 py-2.5 rounded-full font-bold text-xs shadow-sm hover:shadow-md transition-shadow flex items-center gap-2 border border-gray-100 mt-2">
+                                联系作者 / Contact Us <i class="ph-bold ph-chat-centered-dots"></i>
+                            </a>
+                        </div>
+
+                        <!-- Center: Pop Logo -->
+                        <div class="flex flex-col items-center justify-center relative w-full md:w-1/3 cursor-pointer group" onclick="scrollToSec('home')">
+                            <div class="font-title text-4xl md:text-5xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[var(--w-pink)] via-[#FDE047] to-[var(--w-blue)] drop-shadow-[2px_2px_0_rgba(0,0,0,0.1)] transform -rotate-2 group-hover:rotate-0 transition-transform duration-300">
+                                MOEQY.COM
+                            </div>
+                            <div class="absolute -bottom-4 right-4 md:right-8 bg-[#6B5A74] text-white text-[10px] px-3 py-1 rounded-full font-bold transform rotate-[-6deg] group-hover:scale-105 transition-transform whitespace-nowrap shadow-sm tracking-wider">
+                                (※ 2026年也要开心哦!?)
+                            </div>
+                        </div>
+
+                        <!-- Right: Share & Copyright -->
+                        <div class="flex flex-col items-center md:items-end gap-4 w-full md:w-1/3 w-footer-text font-bold tracking-widest text-xs">
+                            <div class="flex items-center gap-4">
+                                <span class="uppercase">SHARE</span>
+                                <a href="#" class="text-xl hover:text-[var(--w-blue)] transition-colors"><i class="ph-bold ph-link"></i></a>
+                                <a href="#" class="text-xl hover:text-[var(--w-blue)] transition-colors"><i class="ph-bold ph-wechat-logo"></i></a>
+                            </div>
+                            <div class="text-center md:text-right opacity-60 leading-relaxed mt-4 text-[10px] uppercase">
+                                © 2025-2026 MoeQy Blog.<br>
+                                ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+    <!-- FLOATING MASCOT (Left Bottom) -->
+    <div id="floating-mascot">
+        <div id="mascot-text" class="mascot-bubble">
+            欢迎来到我的博客！
+        </div>
+        <div class="relative">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mascot&clothing=blazerAndShirt&hairColor=pink" 
+                 class="mascot-img" onclick="changeMascotText()">
+            <div class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                <i class="ph-bold ph-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Card Maker -->
+    <div id="profile-modal" class="modal-overlay" onclick="closeModal(event, 'profile-modal')">
+        <div class="bg-white border-4 border-[var(--w-border)] rounded-[30px] w-[1000px] max-w-[95%] h-[90vh] flex overflow-hidden shadow-2xl relative modal-box" onclick="event.stopPropagation()">
+            <button onclick="closeModal(null, 'profile-modal')" class="absolute top-4 right-4 w-10 h-10 bg-[var(--w-pink)] text-white rounded-full border-2 border-[var(--w-border)] font-black z-20 hover:scale-110 transition-transform">X</button>
+            
+            <!-- Settings -->
+            <div class="w-full md:w-1/3 bg-gray-50 p-8 border-r-4 border-[var(--w-border)] flex flex-col overflow-y-auto custom-scrollbar">
+                <h2 class="font-title text-3xl mb-6">配置贺卡</h2>
+                
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">贺卡昵称</label>
+                    <input type="text" id="card-name-in" class="w-full bg-white border-2 border-[var(--w-border)] rounded-xl px-4 py-2 font-bold focus:outline-none focus:border-[var(--w-pink)] transition-colors" oninput="generateCard()">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">你的形象</label>
+                    <div class="flex items-center gap-4 bg-white p-2 rounded-xl border-2 border-[var(--w-border)]">
+                        <img id="modal-avatar" src="" class="w-12 h-12 rounded-full border border-black object-cover">
+                        <input type="file" onchange="handleLoginAvatar(this)" class="text-xs">
+                    </div>
+                </div>
+
+                <!-- 新增主题颜色选择器 -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">主题颜色</label>
+                    <div class="flex gap-4">
+                        <button onclick="changeCardColor('#FFA6B9', '#FFB8C8', this)" class="color-btn w-8 h-8 rounded-full bg-[#FFA6B9] border-4 border-black shadow-[2px_2px_0_black] hover:scale-110 transition-transform scale-110" title="樱花粉"></button>
+                        <button onclick="changeCardColor('#8BE0F3', '#A8EBF8', this)" class="color-btn w-8 h-8 rounded-full bg-[#8BE0F3] border-2 border-black shadow-[2px_2px_0_black] hover:scale-110 transition-transform" title="天空蓝"></button>
+                        <button onclick="changeCardColor('#FDE047', '#FEEDA6', this)" class="color-btn w-8 h-8 rounded-full bg-[#FDE047] border-2 border-black shadow-[2px_2px_0_black] hover:scale-110 transition-transform" title="柠檬黄"></button>
+                        <button onclick="changeCardColor('#A385E0', '#C4B5FD', this)" class="color-btn w-8 h-8 rounded-full bg-[#A385E0] border-2 border-black shadow-[2px_2px_0_black] hover:scale-110 transition-transform" title="香芋紫"></button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">新春寄语</label>
+                    <!-- 加上 oninput 实时更新视图 -->
+                    <textarea id="card-msg" class="w-full h-32 border-2 border-[var(--w-border)] rounded-xl p-3 font-bold custom-scrollbar" placeholder="写点什么..." oninput="generateCard()">Happy New Year 2026!</textarea>
+                </div>
+                <button onclick="generateCard()" class="mt-auto w-full bg-[var(--w-blue)] text-white font-black py-4 rounded-xl border-4 border-[var(--w-border)] hover:bg-[var(--w-pink)] transition-colors">刷新预览</button>
+            </div>
+            <div class="hidden md:flex w-2/3 bg-[var(--w-yellow)] flex-col items-center justify-center p-8 relative">
+                <canvas id="card-canvas" width="600" height="900" class="hidden"></canvas>
+                <img id="card-preview" class="card-preview-img h-full">
+                <a id="dl-btn" class="absolute bottom-8 right-8 bg-white text-black px-6 py-3 rounded-full font-black border-4 border-black shadow-lg cursor-pointer hover:scale-110 transition-transform">保存图片</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Favorites Detail (Blog Rating Card + Intro Layout) -->
+    <div id="detail-modal" class="modal-overlay" onclick="closeModal(event, 'detail-modal')">
+        <div class="bg-white rounded-[30px] w-[900px] max-w-[95%] h-[80vh] flex flex-col md:flex-row gap-8 relative p-8 shadow-[15px_15px_0_var(--w-pink)] border-4 border-[var(--w-border)] modal-box" onclick="event.stopPropagation()">
+            <button onclick="closeModal(null, 'detail-modal')" class="absolute -top-4 -right-4 w-12 h-12 bg-[var(--w-border)] text-white rounded-full border-4 border-white font-black z-30 hover:scale-110 transition-transform shadow-md flex items-center justify-center text-xl">X</button>
+
+            <!-- Left: Poster Image -->
+            <div class="w-full md:w-1/3 shrink-0 flex flex-col h-full">
+                <img id="detail-img" src="" class="w-full rounded-2xl border-4 border-white object-cover shadow-[6px_6px_0_var(--w-border)] aspect-[2/3] bg-gray-100">
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full md:w-2/3 relative flex flex-col h-full overflow-hidden">
+                <!-- Background Watermark -->
+                <div id="detail-watermark" class="review-watermark">神作</div>
+                
+                <!-- Header (Score Circle + Title) -->
+                <div class="flex items-center gap-4 mb-6 relative z-10 shrink-0 border-b-2 border-dashed border-gray-200 pb-4">
+                    <!-- 10分制圆圈 -->
+                    <div id="detail-score" class="w-16 h-16 shrink-0 rounded-full bg-gradient-to-br from-[var(--w-pink)] to-pink-300 text-white flex items-center justify-center text-4xl font-title shadow-md border-2 border-white">
+                        10
+                    </div>
+                    <div>
+                        <!-- 显示自定义 Tag -->
+                        <div id="detail-cat" class="text-sm text-gray-500 font-bold tracking-widest mb-1">标签</div>
+                        <h2 id="detail-title" class="text-3xl font-black text-[var(--w-text)] leading-tight">作品标题</h2>
+                        <div id="detail-entitle" class="text-xs text-gray-400 tracking-widest uppercase mt-1">ENGLISH TITLE</div>
+                    </div>
+                </div>
+
+                <!-- Scrollable Body -->
+                <div id="detail-scroll-area" class="flex-1 overflow-y-auto pr-4 custom-scrollbar relative z-10 mb-4">
+                    
+                    <!-- 暗紫色简介框 (Synopsis Box) -->
+                    <div class="bg-[#6B5A74] text-white p-5 rounded-xl mb-6 shadow-sm border border-[#594b61]">
+                        <p id="detail-intro" class="text-[14px] leading-relaxed font-medium text-justify opacity-95 tracking-wide">
+                            作品简介内容...
+                        </p>
+                    </div>
+
+                    <!-- MOEGN 评测 -->
+                    <div class="text-sm font-black text-gray-400 mb-3 flex items-center gap-2 tracking-widest">
+                        MOEGN 评测
+                    </div>
+                    <p id="detail-desc" class="text-gray-700 leading-loose text-justify text-[15px] font-medium tracking-wide">
+                        详细评测正文...
+                    </p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="shrink-0 pt-4 border-t border-gray-200 flex justify-between items-center text-sm font-bold text-gray-400 relative z-10">
+                    <div class="flex gap-3">
+                        <a id="detail-link" href="#" target="_blank" class="hover:text-[var(--w-pink)] transition-colors">前往官方页面</a>
+                        <span>·</span>
+                        <a href="#" class="hover:text-[var(--w-pink)] transition-colors">反馈我们</a>
+                    </div>
+                    <div class="opacity-60">Powered by MOEGN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS LOGIC -->
+    <script>
+        const appState = {
+            username: 'Guest',
+            avatar: null,
+            mascot: 'https://placehold.co/400x800/FF8FAB/FFFFFF/png?text=Mascot',
+            
+            fonts: {
+                main: '"M PLUS Rounded 1c", sans-serif',
+                title: '"ZCOOL KuaiLe", cursive'
+            },
+
+            timelineData: [
+                { date: 'JAN 2025', title: '新的开始', desc: '建立了 blog.moeqy.com，写下了第一行代码。', color: 'var(--w-pink)' },
+                { date: 'MAR 2025', title: '初见成效', desc: '第一次收到了读者的长篇评论，感到非常开心！', color: 'var(--w-blue)' },
+                { date: 'JUL 2025', title: '1000 Visitors', desc: '访客量突破四位数，写了一篇特别感谢文章。', color: 'var(--w-yellow)' },
+                { date: 'SEP 2025', title: '技术升级', desc: '为博客添加了深色模式，并开源了主题代码。', color: 'var(--w-blue)' },
+                { date: 'NOV 2025', title: '秋日祭', desc: '参加了二次元社区的秋季征文活动，获得优秀奖。', color: 'var(--w-pink)' },
+                { date: 'DEC 2025', title: '迎接新年', desc: '全站重构，采用波普风格设计迎接2026年！', color: 'var(--w-yellow)' }
+            ],
+
+            favData: {
+                anime: [
+                    {
+                        title: 'MyGO!!!!!', 
+                        enTitle: "It's MyGO!!!!!", 
+                        cat: '番剧', 
+                        tag: 'BEST',
+                        score: '10', 
+                        date: '2025.01.14', 
+                        img: 'https://placehold.co/400x600/FF8FAB/fff?text=MyGO', 
+                        link: 'https://bangumi.tv/subject/425515', 
+                        ratingText: '神作',
+                        intro: 'TV动画《BanG Dream! It\'s MyGO!!!!!》是BanG Dream!企划衍生动画，讲述了少女们在迷茫中寻找归宿、组建乐队的青春群像故事。',
+                        desc: '迷子でもいい、前へ進め。今年最震撼的乐队番，细腻的感情刻画和出色的Live演出让人无法自拔。在无数个日夜里被那句“为什么要演奏春日影”所深深打动。无论是剧情的张力还是音乐的感染力，都堪称绝对的年度最佳。强烈推荐给所有喜欢青春群像剧的朋友。'
+                    },
+                    {
+                        title: '葬送的芙莉莲', 
+                        enTitle: 'Frieren', 
+                        cat: '番剧', 
+                        tag: 'MAGIC',
+                        score: '9.5', 
+                        date: '2025.03.22', 
+                        img: 'https://placehold.co/400x600/8BE0F3/fff?text=Frieren', 
+                        link: 'https://bangumi.tv/subject/402241', 
+                        ratingText: '佳作',
+                        intro: '改编自山田钟人原作、阿部司作画的同名漫画。故事发生在勇者一行人打倒魔王之后的和平世界，讲述了长寿精灵魔法使芙莉莲重新踏上旅途，理解人类情感的治愈之旅。',
+                        desc: '魔法与时间的旅程。在勇者死后的世界里，精灵魔法使寻找着生命的意义，治愈又带着淡淡的忧伤。每一集都像是被温柔的魔法所包裹。动画的制作质量极高，美术背景和音乐配合得天衣无缝，是一部适合静下心来慢慢品味的艺术品。'
+                    },
+                    {
+                        title: '孤独摇滚！', 
+                        enTitle: 'Bocchi the Rock!', 
+                        cat: '番剧', 
+                        tag: 'ROCK',
+                        score: '9.8', 
+                        date: '2025.05.10', 
+                        img: 'https://placehold.co/400x600/FDE047/333?text=Bocchi', 
+                        link: 'https://bangumi.tv/subject/328609', 
+                        ratingText: '神作',
+                        intro: '改编自滨路晶的同名四格漫画。讲述了极度怕生又渴望闪耀的女高中生后藤一里，偶然加入了“结束乐队”，从而展开了一段充满欢笑与泪水的摇滚日常。',
+                        desc: '社恐摇滚物语！充满创意的演出和好听的音乐，年度最快乐的观看体验。波奇酱的成长轨迹让人深有共鸣。制作组用极其夸张和富有想象力的画面表现了社恐的内心世界，每一集都能让人捧腹大笑的同时又感到一丝温馨。'
+                    },
+                    {
+                        title: '我推的孩子', 
+                        enTitle: 'Oshi no Ko', 
+                        cat: '番剧', 
+                        tag: 'IDOL',
+                        score: '8.5', 
+                        date: '2025.07.05', 
+                        img: 'https://placehold.co/400x600/FF8FAB/fff?text=Ai', 
+                        link: 'https://bangumi.tv/subject/386026', 
+                        ratingText: '良作',
+                        intro: '改编自赤坂明原作、横枪萌果作画的同名漫画。讲述了在光鲜亮丽却残酷的演艺圈中，主角探寻母亲遇害真相的悬疑复仇故事。',
+                        desc: '演艺圈的残酷与闪耀。剧情反转不断，第一集的震撼至今难忘。对偶像文化的深刻剖析与复仇主线的完美结合。虽然中后期的节奏略有争议，但整体的悬疑感和人物塑造依然保持着较高的水准。'
+                    }
+                ],
+                game: [
+                    {
+                        title: '绝区零', 
+                        enTitle: 'ZENLESS ZONE ZERO', 
+                        cat: '游戏', 
+                        tag: 'URBAN',
+                        score: '6.0', 
+                        date: '2025.10.15', 
+                        img: 'https://placehold.co/400x600/334155/fff?text=ZZZ', 
+                        link: 'https://zzz.hoyoverse.com/', 
+                        ratingText: '平庸',
+                        intro: '《绝区零》是由米哈游全新研发和推出的动作游戏。人们生活在一个遭受神秘且危险的超自然灾害“空洞”侵袭的近未来世界中，由于空洞灾害导致旧都“艾利都”被毁。面对空洞侵蚀，人们建立了“新艾利都”作为人类最后的绿洲。',
+                        desc: '游戏大量的渲染动画让整个游戏过程非常丰满，配合本身超高的风格化美术以及创新的平面设计美化超越了目前美术同质化极其严重的国产游戏。但是枯燥的游戏模式，平庸的动作系统，以及依旧换汤不换药的养成系统，搭配上可以称之为无底洞的米氏抽卡，使得《绝区零》即使美术风格再丰富，也注定无法成为一款“好玩”的游戏。'
+                    },
+                    {
+                        title: '崩坏：星穹铁道', 
+                        enTitle: 'Honkai: Star Rail', 
+                        cat: '游戏', 
+                        tag: 'SPACE',
+                        score: '9.0', 
+                        date: '2025.02.06', 
+                        img: 'https://placehold.co/400x600/FDE047/333?text=HSR', 
+                        link: 'https://hsr.hoyoverse.com/', 
+                        ratingText: '佳作',
+                        intro: '《崩坏：星穹铁道》是米哈游自研的全新银河冒险策略游戏。玩家将乘坐星穹列车，在各个充满异星风情的星球间穿梭，结识新的伙伴，揭开星核的秘密。',
+                        desc: '乘坐星穹列车，开拓宇宙。出色的剧情演出和轻松的副游体验，年度最佳运营。匹诺康尼的篇章堪称神作。作为一款回合制RPG，它在剧情演出和音乐表现上做到了极致，极大地降低了玩家的日常肝度负担，非常适合作为长期的副游体验。'
+                    },
+                    {
+                        title: '原神', 
+                        enTitle: 'Genshin Impact', 
+                        cat: '游戏', 
+                        tag: 'OPEN',
+                        score: '8.5', 
+                        date: '2025.08.28', 
+                        img: 'https://placehold.co/400x600/8BE0F3/fff?text=Genshin', 
+                        link: 'https://genshin.hoyoverse.com/', 
+                        ratingText: '良作',
+                        intro: '《原神》是由米哈游自研的一款开放世界冒险RPG。你将在游戏中探索一个被称作「提瓦特」的幻想世界，邂逅性格各异、能力独特的同伴。',
+                        desc: '提瓦特大陆的冒险仍在继续。新国家的地图设计和剧情表现依然是业界顶尖水平。每一次大版本更新都充满惊喜。不过随着游戏运营时间的增长，不可避免地出现了一些系统臃肿和审美疲劳的问题，但瑕不掩瑜。'
+                    },
+                    {
+                        title: '明日方舟', 
+                        enTitle: 'Arknights', 
+                        cat: '游戏', 
+                        tag: 'TOWER',
+                        score: '9.5', 
+                        date: '2025.11.01', 
+                        img: 'https://placehold.co/400x600/000/fff?text=Ark', 
+                        link: 'https://ak.hypergryph.com/', 
+                        ratingText: '神作',
+                        intro: '《明日方舟》是由鹰角网络开发的一款战术策略类游戏。玩家将作为罗德岛的领导者“博士”，带领干员们救助受难人群，处理矿石灾变，以及对抗整合运动。',
+                        desc: '泰拉大陆的战火未熄。优秀的剧情塑造和深度的塔防策略，长线运营的典范。依然是手机里舍不得卸载的游戏。文案的深度和活动的机制创新保持着极高的水准，每一次大型活动都能带来不一样的感动。'
+                    }
+                ]
+            }
+        };
+
+        const friendsData = [
+            { name: "Alice", role:"Frontend Dev", avatar: "Alice", desc: "A frontend wizard who loves animation and clean UI.", pills: ["★ React", "♥ CSS"], color: "var(--w-pink)", isNew: true, url: "https://example.com/alice" },
+            { name: "Bob", role:"UI Designer", avatar: "Bob", desc: "Digital artist & UI/UX designer creating beautiful things.", pills: ["★ Figma", "♥ Art"], color: "var(--w-blue)", isNew: true, url: "https://example.com/bob" },
+            { name: "Cat", role:"Backend Dev", avatar: "Cat", desc: "Fullstack developer building cool stuff on the web.", pills: ["★ Node", "♥ DB"], color: "var(--w-yellow)", isNew: false, url: "https://example.com/cat" },
+            { name: "Dog", role:"Game Dev", avatar: "Dog", desc: "Indie game developer working on a new RPG.", pills: ["★ Unity", "♥ C#"], color: "var(--w-text)", isNew: false, url: "https://example.com/dog" },
+            { name: "Eve", role:"Tech Writer", avatar: "Eve", desc: "Writing about tech trends and life hacks.", pills: ["★ Blog", "♥ Life"], color: "purple", isNew: false, url: "https://example.com/eve" },
+            { name: "Frank", role:"Artist", avatar: "Frank", desc: "Pixel art enthusiast and retro gamer.", pills: ["★ Pixel", "♥ Game"], color: "orange", isNew: false, url: "https://example.com/frank" },
+            { name: "Grace", role:"Musician", avatar: "Grace", desc: "Composing electronic music for games.", pills: ["★ Music", "♥ DAW"], color: "teal", isNew: false, url: "https://example.com/grace" }
+        ];
+
+        let currentFriendIdx = 0; 
+        let autoPlayTimer = null; 
+        let isHovering = false;
+        let mascotTimeout = null;
+
+        // Init
+        function startApp() {
+            const name = document.getElementById('username-in').value.trim() || 'Guest';
+            appState.username = name;
+            document.getElementById('display-name').textContent = name;
+            document.getElementById('login-curtain').style.transform = 'translateY(-100%)';
+            
+            renderTimeline();
+            renderFav('anime');
+            initFriends();
+            generateCard();
+        }
+
+        // Avatar Handling
+        function handleLoginAvatar(input) {
+            const file = input.files[0];
+            if(file) {
+                const r = new FileReader();
+                r.onload = (e) => {
+                    const res = e.target.result;
+                    appState.avatar = res;
+                    document.getElementById('login-avatar-preview').src = res;
+                    document.getElementById('side-avatar').src = res;
+                    document.getElementById('modal-avatar').src = res;
+                    
+                    const homeAvatar = document.getElementById('home-avatar');
+                    if (homeAvatar) homeAvatar.src = res;
+
+                    generateCard();
+                };
+                r.readAsDataURL(file);
+            }
+        }
+
+        // 全局同步更新昵称
+        function updateProfileName(val) {
+            appState.username = val || 'Guest';
+            const dn = document.getElementById('display-name');
+            if (dn) dn.textContent = appState.username;
+            generateCard();
+        }
+
+        // 贺卡全局颜色状态
+        appState.cardColorMain = '#FFA6B9';
+        appState.cardColorLight = '#FFB8C8';
+        appState.cardColorBg = '#FFF0F5';
+
+        // 增加颜色切换与按钮高亮反馈逻辑
+        function changeCardColor(main, light, btnElement) {
+            appState.cardColorMain = main;
+            appState.cardColorLight = light;
+            
+            if (btnElement) {
+                // 移除所有按钮的高亮外框
+                document.querySelectorAll('.color-btn').forEach(btn => {
+                    btn.classList.remove('scale-110', 'border-4');
+                    btn.classList.add('border-2');
+                });
+                // 为当前点击的按钮添加高亮外框
+                btnElement.classList.remove('border-2');
+                btnElement.classList.add('scale-110', 'border-4');
+            }
+            
+            generateCard();
+        }
+
+        // Scroll & Nav
+        function scrollToSec(id) { document.getElementById(id).scrollIntoView({ behavior: 'smooth' }); }
+        
+        // Mascot Collision & Text
+        window.addEventListener('scroll', () => {
+            const footer = document.querySelector('footer');
+            const mascot = document.getElementById('floating-mascot');
+            const rect = footer.getBoundingClientRect();
+            
+            // Collision Logic
+            if (rect.top < window.innerHeight) {
+                mascot.style.bottom = (window.innerHeight - rect.top + 20) + 'px';
+            } else {
+                mascot.style.bottom = '20px';
+            }
+
+            // Nav Highlighting & Mascot Text
+            const secs = document.querySelectorAll('section');
+            let current = '';
+            secs.forEach(s => { if(scrollY >= s.offsetTop - 300) current = s.id; });
+            
+            document.querySelectorAll('.nav-item').forEach(i => {
+                i.classList.remove('active');
+                if(i.getAttribute('onclick').includes(current)) i.classList.add('active');
+            });
+
+            // Auto Play Logic based on visibility
+            if(current === 'friends' && !isHovering) {
+                startAutoPlay();
+            } else if (current !== 'friends') {
+                stopAutoPlay();
+            }
+
+            // Auto Mascot Text
+            const texts = {
+                'home': '欢迎回家！2026年快乐！',
+                'summary': '看看这一年都发生了什么？',
+                'favorites': '这些是我的年度最佳推荐！',
+                'friends': '这里有很多有趣的朋友哦！'
+            };
+            if(texts[current]) document.getElementById('mascot-text').innerText = texts[current];
+        });
+
+        // Content Rendering (Timeline)
+        function renderTimeline() {
+            const container = document.getElementById('timeline-container');
+            if(!container) return;
+            container.innerHTML = '';
+            appState.timelineData.forEach(item => {
+                container.innerHTML += `<div class="h-time-item"><div class="h-time-dot" style="background: ${item.color}"></div><div class="h-time-card"><div class="text-sm font-black mb-2" style="color: ${item.color}">${item.date}</div><h4 class="font-bold text-xl mb-1 text-[var(--w-border)]">${item.title}</h4><p class="text-sm mt-2 text-gray-500">${item.desc}</p></div></div>`;
+            });
+            
+            initTimelineDrag();
+        }
+
+        function initTimelineDrag() {
+            const slider = document.querySelector('.timeline-scroll-area');
+            if(!slider) return;
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                slider.style.scrollBehavior = 'auto'; 
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.style.scrollBehavior = 'smooth';
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.style.scrollBehavior = 'smooth';
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault(); 
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 1.5; 
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        }
+
+        function renderFav(type) {
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`btn-${type}`).classList.add('active');
+
+            const grid = document.getElementById('fav-grid');
+            if(!grid) return;
+            grid.innerHTML = '';
+            
+            (appState.favData[type] || []).forEach((item, i) => {
+                // 修改：显示自定义的 tag
+                grid.innerHTML += `
+                    <div class="fav-card-vertical group cursor-pointer" onclick="openDetailModal('${type}', ${i})">
+                        <div class="fav-rank">${i+1}</div>
+                        <img src="${item.img}" class="fav-img">
+                        <div class="fav-title">${item.title}</div>
+                        <div class="fav-tag">#${item.tag}</div>
+                    </div>
+                `;
+            });
+        }
+
+        // Modal Controls
+        function closeModal(e, modalId) {
+            if (!e || e.target.id === modalId) {
+                document.getElementById(modalId).classList.remove('open');
+            }
+        }
+        function openProfile() { 
+            document.getElementById('card-name-in').value = appState.username; // 初始化输入框为当前用户名
+            document.getElementById('profile-modal').classList.add('open'); 
+            generateCard(); 
+        }
+
+        // Favorites Detail Modal
+        function openDetailModal(type, index) {
+            const item = appState.favData[type][index];
+            
+            document.getElementById('detail-score').innerText = item.score || '10';
+            // 修改：显示自定义的 tag
+            document.getElementById('detail-cat').innerText = item.tag || '标签';
+            document.getElementById('detail-title').innerText = item.title;
+            document.getElementById('detail-entitle').innerText = item.enTitle || '';
+            document.getElementById('detail-img').src = item.img;
+            
+            document.getElementById('detail-intro').innerText = item.intro || '暂无简介';
+            document.getElementById('detail-desc').innerText = item.desc;
+            
+            document.getElementById('detail-link').href = item.link;
+            document.getElementById('detail-watermark').innerText = item.ratingText || '';
+
+            // Reset scroll
+            document.getElementById('detail-scroll-area').scrollTop = 0;
+
+            document.getElementById('detail-modal').classList.add('open');
+        }
+
+        function initFriends() {
+            // 1. Background Marquee
+            const bgLayer = document.getElementById('friends-bg-layer');
+            const createRow = () => {
+                let html = '<div class="bg-marquee-row">';
+                // 将循环次数提升到 12 次，保证带鱼屏下有足够的照片填充整个宽度
+                // 12 的 25% (动画偏移量) 是 3 整段，可完美无缝循环
+                for(let k=0; k<12; k++) {
+                    friendsData.forEach(f => {
+                        html += `<img src="https://api.dicebear.com/7.x/avataaars/svg?seed=${f.avatar}" class="bg-marquee-img">`;
+                    });
+                }
+                html += '</div>';
+                return html;
+            };
+            bgLayer.innerHTML = createRow() + createRow() + createRow() + createRow() + createRow();
+
+            // 2. Render Nav
+            const navScroll = document.getElementById('char-nav-scroll');
+            let navHTML = '';
+            friendsData.forEach((f, i) => {
+                const badge = f.isNew ? '<div class="nav-badge-new">!</div>' : '';
+                navHTML += `<div class="nav-avatar-wrapper" id="nav-wrapper-${i}" onclick="manualSelectFriend(${i})">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=${f.avatar}" class="nav-avatar-item">
+                                ${badge}
+                            </div>`;
+            });
+            navScroll.innerHTML = navHTML;
+
+            // 3. Initial Render
+            renderFriendShowcase(0);
+        }
+
+        function renderFriendShowcase(idx) {
+            currentFriendIdx = idx;
+            const f = friendsData[idx];
+            
+            // Content
+            const content = document.getElementById('char-content');
+            content.innerHTML = `
+                <div class="char-info-left animate-[fadeIn_0.5s]">
+                    <h3 class="char-name-lg" style="color:${f.color}">
+                        ${f.name}
+                        ${f.isNew ? '<span class="char-tag-new">NEW!</span>' : ''}
+                    </h3>
+                    <div class="char-role-badge" style="background:${f.color}">
+                        <i class="ph-bold ph-user"></i> ${f.role}
+                    </div>
+                    <div class="char-desc-box">
+                        ${f.desc}<br>
+                        <span class="text-sm opacity-70 mt-2 block">"让我们一起创作更棒的内容吧！"</span>
+                    </div>
+                    <div class="char-data-grid">
+                        <div class="char-data-item"><span class="char-data-label">标签</span> ${f.pills[0]}</div>
+                        <div class="char-data-item"><span class="char-data-label">特长</span> ${f.pills[1]}</div>
+                    </div>
+                    <a href="${f.url}" target="_blank" class="char-link-btn" style="background:${f.color}">
+                        访问博客 <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="char-card-right animate-[popIn_0.5s]">
+                    <div class="cc-header" style="background:${f.color}">${f.name}</div>
+                    <div class="cc-img-box">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=${f.avatar}" class="cc-img">
+                    </div>
+                    <div class="cc-tags">
+                        # ${f.pills[0]}<br># ${f.pills[1]}<br># ${f.role}
+                    </div>
+                    <div class="cc-plus-btn" style="background:${f.color}" onclick="window.open('${f.url}', '_blank')"><i class="ph-bold ph-plus"></i></div>
+                    <div class="cc-watermark">LINK</div>
+                </div>
+            `;
+
+            // Nav Active State
+            document.querySelectorAll('.nav-avatar-wrapper').forEach(el => el.classList.remove('active'));
+            const activeEl = document.getElementById(`nav-wrapper-${idx}`);
+            if(activeEl) {
+                activeEl.classList.add('active');
+                
+                const container = document.getElementById('char-nav-scroll');
+                const scrollLeft = activeEl.offsetLeft - (container.clientWidth / 2) + (activeEl.clientWidth / 2);
+                container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+            }
+        }
+
+        function nextFriend() {
+            let next = currentFriendIdx + 1;
+            if(next >= friendsData.length) next = 0;
+            renderFriendShowcase(next);
+            resetProgressBar();
+        }
+        function prevFriend() {
+            let prev = currentFriendIdx - 1;
+            if(prev < 0) prev = friendsData.length - 1;
+            renderFriendShowcase(prev);
+            resetProgressBar();
+        }
+
+        function manualSelectFriend(idx) {
+            renderFriendShowcase(idx);
+            stopAutoPlay(); 
+            startAutoPlay(); 
+        }
+
+        function startAutoPlay() {
+            if(autoPlayTimer) return; 
+            if(isHovering) return; 
+            
+            resetProgressBar();
+            autoPlayTimer = setInterval(() => {
+                nextFriend();
+            }, 3000);
+        }
+        function stopAutoPlay() {
+            if(autoPlayTimer) {
+                clearInterval(autoPlayTimer);
+                autoPlayTimer = null;
+            }
+            const bar = document.getElementById('autoplay-fill');
+            if(bar) {
+                bar.style.animation = 'none';
+                bar.style.width = '0';
+            }
+        }
+        
+        function resetProgressBar() {
+            const bar = document.getElementById('autoplay-fill');
+            if(bar) {
+                bar.style.animation = 'none';
+                bar.offsetHeight; 
+                bar.style.animation = 'progressFill 3s linear';
+            }
+        }
+
+        // 辅助绘制圆角矩形
+        function drawRoundRect(ctx, x, y, width, height, radius) {
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + width - radius, y);
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+            ctx.lineTo(x + width, y + height - radius);
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            ctx.lineTo(x + radius, y + height);
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+            ctx.lineTo(x, y + radius);
+            ctx.quadraticCurveTo(x, y, x + radius, y);
+            ctx.closePath();
+        }
+
+        // Card Generator (拍立得角色卡重制版 + 全面修复)
+        function generateCard() {
+            const cvs = document.getElementById('card-canvas'); if(!cvs) return;
+            const ctx = cvs.getContext('2d'); 
+            const W=600, H=850;
+            cvs.width = W; cvs.height = H;
+
+            const cMain = appState.cardColorMain || '#FFA6B9';
+            const cLight = appState.cardColorLight || '#FFB8C8';
+
+            // 1. 全局背景 - 渐变底加波点 (和 Footer 一致)
+            const grad = ctx.createLinearGradient(0, 0, W, 0);
+            grad.addColorStop(0, '#FFF0F5');
+            grad.addColorStop(0.5, '#FEF9C3');
+            grad.addColorStop(1, '#E0F7FA');
+            ctx.fillStyle = grad; 
+            ctx.fillRect(0, 0, W, H);
+            
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            for(let i=15; i<W; i+=30) {
+                for(let j=15; j<H; j+=30) {
+                    ctx.beginPath(); ctx.arc(i, j, 3, 0, Math.PI*2); ctx.fill();
+                }
+            }
+
+            // 2. 绘制底层错位卡片 (实现多层卡片堆叠的立体感)
+            ctx.save();
+            ctx.translate(W/2, H/2);
+            ctx.rotate(-4 * Math.PI / 180); // 向左倾斜 4 度
+            ctx.translate(-W/2, -H/2);
+            
+            // 底卡白边框
+            ctx.fillStyle = '#FFFFFF';
+            ctx.shadowColor = 'rgba(0,0,0,0.1)';
+            ctx.shadowBlur = 10;
+            drawRoundRect(ctx, 40, 50, 520, 770, 16);
+            ctx.fill();
+            ctx.shadowColor = 'transparent';
+            
+            // 底卡彩色头部 Banner
+            ctx.save();
+            drawRoundRect(ctx, 40, 50, 520, 770, 16);
+            ctx.clip(); 
+            ctx.fillStyle = cMain;
+            ctx.fillRect(40, 50, 520, 65);
+            ctx.restore();
+
+            // 底卡灰色照片占位区
+            ctx.fillStyle = '#f0f0f0';
+            drawRoundRect(ctx, 60, 135, 480, 480, 16);
+            ctx.fill();
+            
+            ctx.restore();
+
+            // 3. 绘制主白色卡片 (正向层)
+            ctx.fillStyle = '#FFFFFF';
+            ctx.shadowColor = 'rgba(0,0,0,0.15)';
+            ctx.shadowBlur = 20;
+            ctx.shadowOffsetY = 5;
+            drawRoundRect(ctx, 40, 50, 520, 770, 16);
+            ctx.fill();
+            ctx.shadowColor = 'transparent';
+
+            // 4. 绘制彩色头部 Banner (Header)
+            ctx.save();
+            drawRoundRect(ctx, 40, 50, 520, 770, 16);
+            ctx.clip(); 
+            ctx.fillStyle = cMain;
+            ctx.fillRect(40, 50, 520, 65);
+            
+            // 头部中心心形暗纹
+            ctx.fillStyle = cLight;
+            ctx.font = '60px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('♥', 300, 82);
+            ctx.restore();
+
+            // 标题文字 (加宽字间距效果)
+            const nameIn = document.getElementById('card-name-in');
+            const displayCardName = (nameIn && nameIn.value) ? nameIn.value : appState.username;
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 24px "M PLUS Rounded 1c", sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(displayCardName.toUpperCase().split('').join(' '), 300, 82);
+
+            // 异步加载图片
+            const loadImage = (src) => new Promise((resolve) => {
+                const img = new Image();
+                img.crossOrigin = 'Anonymous';
+                img.onload = () => resolve(img);
+                img.onerror = () => resolve(img); 
+                img.src = src;
+            });
+
+            Promise.all([
+                loadImage(appState.mascot),
+                loadImage(appState.avatar || 'https://api.dicebear.com/7.x/avataaars/svg?seed=Guest')
+            ]).then(([mascotImg, uImg]) => {
+                
+                // 5. 核心照片区域 (使用角色立绘)
+                ctx.save();
+                drawRoundRect(ctx, 60, 135, 480, 480, 16);
+                ctx.clip();
+                ctx.fillStyle = '#f8f8f8';
+                ctx.fillRect(60, 135, 480, 480);
+                if(mascotImg.width) {
+                    // 等比缩放铺满 (cover)
+                    const scale = Math.max(480 / mascotImg.width, 480 / mascotImg.height);
+                    const x = 60 + (480 - mascotImg.width * scale) / 2;
+                    const y = 135 + (480 - mascotImg.height * scale) / 2;
+                    ctx.drawImage(mascotImg, x, y, mascotImg.width * scale, mascotImg.height * scale);
+                }
+                ctx.restore();
+
+                // 6. 二维码占位区 (右下角照片边缘)
+                ctx.fillStyle = '#fff';
+                ctx.shadowColor = 'rgba(0,0,0,0.1)';
+                ctx.shadowBlur = 10;
+                ctx.fillRect(445, 545, 80, 80);
+                ctx.shadowColor = 'transparent';
+                
+                ctx.strokeStyle = cMain;
+                ctx.lineWidth = 4;
+                ctx.strokeRect(445, 545, 80, 80);
+                
+                // 伪造二维码内的方块点缀
+                ctx.fillStyle = cMain;
+                ctx.fillRect(455, 555, 15, 15);
+                ctx.fillRect(495, 555, 15, 15);
+                ctx.fillRect(455, 595, 15, 15);
+                ctx.fillRect(490, 590, 20, 20);
+                ctx.font = 'bold 10px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('SCAN', 485, 580);
+
+                // 7. 用户头像 & 昵称 (左下方区域)
+                let textStartX = 65;
+                if(uImg.width) {
+                    ctx.save();
+                    ctx.beginPath(); ctx.arc(90, 665, 25, 0, Math.PI*2); ctx.clip();
+                    ctx.drawImage(uImg, 65, 640, 50, 50);
+                    ctx.restore();
+                    
+                    // 头像主题色外圈
+                    ctx.strokeStyle = cLight; 
+                    ctx.lineWidth = 3;
+                    ctx.beginPath(); ctx.arc(90, 665, 25, 0, Math.PI*2); ctx.stroke();
+                    textStartX = 130; 
+                }
+
+                // 用户名
+                ctx.fillStyle = cMain;
+                ctx.font = 'bold 26px "M PLUS Rounded 1c", sans-serif';
+                ctx.textAlign = 'left'; 
+                ctx.textBaseline = 'middle';
+                ctx.fillText(displayCardName, textStartX, 665);
+
+                // 右侧叠加的小红心 (装饰)
+                ctx.font = '14px Arial';
+                ctx.fillStyle = cMain; ctx.fillText('♥', 515, 645);
+                ctx.fillStyle = '#FF7AA2'; ctx.fillText('♥', 515, 660);
+                ctx.fillStyle = '#A385E0'; ctx.fillText('♥', 515, 675);
+
+                // 8. 绘制寄语 Tags (前带井号)
+                const msg = document.getElementById('card-msg')?.value || ''; 
+                ctx.fillStyle = '#666'; ctx.font = 'bold 18px "M PLUS Rounded 1c", sans-serif';
+                ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+                
+                let words = msg.split(''), lines = [], currentLine = '';
+                for(let n=0; n<words.length; n++) {
+                    if(ctx.measureText(currentLine + words[n]).width > 300) {
+                        lines.push(currentLine); currentLine = words[n];
+                    } else currentLine += words[n];
+                }
+                if(currentLine) lines.push(currentLine);
+                
+                for(let i=0; i<Math.min(lines.length, 3); i++) {
+                    ctx.fillText('# ' + lines[i], 65, 715 + i*30);
+                }
+
+                // 9. 右下角巨大浅色水印
+                ctx.fillStyle = cLight;
+                ctx.globalAlpha = 0.3;
+                ctx.font = '900 70px "ZCOOL KuaiLe", cursive';
+                ctx.textAlign = 'right'; ctx.textBaseline = 'bottom';
+                ctx.fillText('MURI!', 530, 810);
+                ctx.globalAlpha = 1.0; // 恢复透明度
+
+                // 输出图片
+                const preview = document.getElementById('card-preview'); const dl = document.getElementById('dl-btn');
+                if(preview && dl) { preview.src = cvs.toDataURL(); dl.href = cvs.toDataURL(); dl.download = '2026_card.png'; }
+            });
+        }
+
+        function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+            let words=text.split(''), line='';
+            for(let n=0;n<words.length;n++){
+                if(ctx.measureText(line+words[n]).width>maxWidth){ctx.fillText(line,x,y);line=words[n];y+=lineHeight;}
+                else line+=words[n];
+            }
+            ctx.fillText(line,x,y);
+        }
+
+        function changeMascotText() { 
+            const b = document.getElementById('mascot-text'); 
+            if(!b) return;
+            
+            // 立即改变文字
+            b.innerText = "点我干嘛？快去学习！"; 
+            b.classList.remove('popIn'); 
+            void b.offsetWidth; // 触发重绘重置CSS动画
+            b.classList.add('popIn');
+
+            // 清除之前的定时器，防止连续点击出错
+            if(mascotTimeout) clearTimeout(mascotTimeout);
+
+            // 3秒后检测当前页面，恢复默认文本
+            mascotTimeout = setTimeout(() => {
+                const secs = document.querySelectorAll('section');
+                let current = '';
+                secs.forEach(s => { if(scrollY >= s.offsetTop - 300) current = s.id; });
+                
+                const texts = {
+                    'home': '欢迎回家！2026年快乐！',
+                    'summary': '看看这一年都发生了什么？',
+                    'favorites': '这些是我的年度最佳推荐！',
+                    'friends': '这里有很多有趣的朋友哦！'
+                };
+                b.innerText = texts[current] || '欢迎来到我的博客！';
+                
+                // 再次播放弹出的过渡动画
+                b.classList.remove('popIn');
+                void b.offsetWidth;
+                b.classList.add('popIn');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
