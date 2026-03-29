@@ -11,14 +11,24 @@
     <!-- === 外部图标库引入地址 (Phosphor Icons) === -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
-    <!-- === 外部字体引入地址 (Google Fonts) === -->
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=M+PLUS+Rounded+1c:wght@400;500;800;900&display=swap" rel="stylesheet">
 
     <style>
+        /* 1. 定义本地字体 */
+        @font-face {
+            font-family: 'HarmonyOS_Sans_SC';
+            src: url('../../font/HarmonyOS_Sans_SC.woff2') format('woff2'); /* 替换为你的实际文件名 */
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'mksjh';
+            src: url('../../font/mksjh.ttf') format('ttf'); /* 替换为你的实际文件名 */
+            font-display: swap;
+        }
+
         :root {
             /* === 全局字体配置集中地 === */
-            --w-font-main: 'M PLUS Rounded 1c', sans-serif; 
-            --w-font-title: 'ZCOOL KuaiLe', cursive;        
+            --w-font-main: 'HarmonyOS_Sans_SC', sans-serif; 
+            --w-font-title: 'mksjh', cursive;        
 
             /* --- 配色 (Watanare Pop) --- */
             --w-pink: #FF8FAB;
@@ -239,7 +249,7 @@
         .side-avatar:hover { transform: scale(1.1); }
         
         .avatar-hint {
-            position: absolute; left: 70px; top: 15px;
+            position: fixed; left: 70px; top: 50px;
             background: var(--w-yellow); color: var(--w-border);
             font-size: 12px; font-weight: 900; padding: 6px 10px;
             border-radius: 12px; border: 2px solid var(--w-border);
@@ -790,6 +800,13 @@
         }
         .back-to-top:hover { transform: translateY(-3px); }
 
+        #mascot-text {
+            position: fixed;
+            bottom: 100px;
+            left: 200px;
+            z-index: 20;
+        }
+
         /* --- MODAL (With CSS Fade In/Out Transitions) --- */
         .modal-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.6);
@@ -866,7 +883,7 @@
         <div class="login-box">
             <h1 class="font-title text-6xl text-[var(--w-border)] mb-4">2025 REWIND</h1>
             <label class="login-avatar-upload" title="Upload Avatar">
-                <img id="login-avatar-preview" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Guest">
+                <img id="login-avatar-preview" src="../../assets/moeqyGirl/moeqyGirlCat(no-ear)_noBackground.webp">
                 <input type="file" class="hidden" accept="image/*" onchange="handleLoginAvatar(this)">
             </label>
             <input type="text" id="username-in" placeholder="Enter Nickname" 
@@ -880,7 +897,7 @@
     <!-- 2. SIDEBAR -->
     <nav id="sidebar">
         <div class="nav-avatar-container" onclick="openProfile()">
-            <img id="side-avatar" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Guest" class="side-avatar">
+            <img id="side-avatar" src="../../assets/moeqyGirl/moeqyGirlCat(no-ear)_noBackground.webp" class="side-avatar">
             <div class="avatar-hint">点击制作贺卡</div>
         </div>
         <div class="nav-item active" onclick="scrollToSec('home')"><i class="ph-bold ph-house"></i><span class="nav-text">首页</span></div>
@@ -896,7 +913,7 @@
         <section id="home" class="relative">
             <div class="home-container">
                 <div class="w-1/2 flex justify-center">
-                    <img src="https://placehold.co/400x600/FF8FAB/fff?text=Mascot+Art" class="w-full max-w-md drop-shadow-2xl transform -rotate-3 border-4 border-white rounded-3xl">
+                    <img src="../../assets/2026postChar.webp" class="w-full max-w-md drop-shadow-2xl transform -rotate-3 border-4 border-white rounded-3xl">
                 </div>
                 <div class="w-1/2 home-text">
                     <div class="inline-block bg-[var(--w-yellow)] border-2 border-[var(--w-border)] px-6 py-2 rounded-full font-black text-xl mb-6 shadow-[4px_4px_0_var(--w-border)]">
@@ -1102,7 +1119,7 @@
             欢迎来到我的博客！
         </div>
         <div class="relative">
-            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mascot&clothing=blazerAndShirt&hairColor=pink" 
+            <img src="../../assets/moeqyGirl/moeqyGirlCat(no-ear)_noBackground.webp" 
                  class="mascot-img" onclick="changeMascotText()">
             <div class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
                 <i class="ph-bold ph-arrow-up"></i>
@@ -1825,7 +1842,7 @@
 
             Promise.all([
                 loadImage(appState.mascot),
-                loadImage(appState.avatar || 'https://api.dicebear.com/7.x/avataaars/svg?seed=Guest')
+                loadImage(appState.avatar || '../../assets/moeqyGirl/moeqyGirlCat(no-ear)_noBackground.webp')
             ]).then(([mascotImg, uImg]) => {
                 
                 // 5. 核心照片区域 (使用角色立绘)
